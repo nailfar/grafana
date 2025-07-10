@@ -110,6 +110,12 @@
       "update-button": "更新",
       "users-heading": "组织用户"
     },
+    "enterprise-auth-features-card": {
+      "dismiss": "关闭",
+      "heading": "企业身份验证",
+      "learn-more-link": "了解更多",
+      "text": "通过 <1>SAML</1>、<3>SCIM</3>、<6>LDAP</6> 和 <8>RBAC</8> 自动管理用户、团队和权限 — 适用于 Grafana Cloud 和企业版。"
+    },
     "feature-listing": {
       "title-auditing": "审计",
       "title-custom-branding": "定制品牌",
@@ -364,12 +370,12 @@
       "missing-series-resolve": "缺少要解除的序列评估",
       "no-annotations": "无注释",
       "notification-configuration": {
-        "active-timings": "",
+        "active-timings": "主动时间间隔",
         "contact-point": "联络点",
         "group-by": "分组方式",
-        "group-title": "",
+        "group-title": "通知配置",
         "mute-timings": "静音时间设定",
-        "timing-options": ""
+        "timing-options": "时间设定"
       },
       "pending-period": "待处理时段",
       "rule": "规则",
@@ -517,6 +523,48 @@
     "alert-warning": {
       "to-rule-list": "到规则列表"
     },
+    "alertVersionHistory": {
+      "alerting": "警报",
+      "alerting-change-description": "此更新由提醒系统根据其他更改进行。例如，当重命名用于简化路由的联络点时，将更新受影响的规则",
+      "annotations": "注释",
+      "compare": "比较",
+      "compare-with-latest": "与最新版本比较",
+      "compareVersions": "比较版本",
+      "comparing-versions": "比较版本",
+      "condition": "提醒条件",
+      "contactPointRouting": "联络点路由",
+      "description": "每次编辑提醒规则时，都会创建一个新版本。在下方选择两个版本，并比较它们的差异。",
+      "errorloading": "加载提醒规则版本失败",
+      "execErrorState": "执行错误时的提醒状态",
+      "intervalSeconds": "评估间隔",
+      "labels": "标签",
+      "latest": "最近",
+      "name": "名称",
+      "namespace_uid": "文件夹 UID",
+      "noDataState": "无数据时的提醒状态",
+      "noVersionsFound": "未找到此规则的版本",
+      "paused": "暂停状态",
+      "pendingPeriod": "待处理时段",
+      "provisioning": "配置",
+      "provisioning-change-description": "版本更新是通过配置进行的",
+      "queryAndAlertCondition": "查询和提醒条件",
+      "restore": "还原",
+      "restore-manually": "您的提醒规则无法还原。这可能是由于其他实体（如联络点、数据源等）的更改。请手动还原规则版本",
+      "restore-modal": {
+        "body": "您确定要将提醒规则定义还原到此版本吗？所有未保存的更改都将丢失。",
+        "confirm": "是，还原配置",
+        "error": "无法还原提醒规则版本",
+        "summary": "要应用的更改摘要：",
+        "title": "恢复版本"
+      },
+      "restore-version": "恢复到版本 {{version}}",
+      "rule_group": "规则组",
+      "unknown": "未知",
+      "unknown-change-description": "此更新是在实施提醒规则版本历史记录之前进行的。系统未跟踪进行更改的用户，但将来的更改将包括用户",
+      "user-id": "用户 ID {{uid}}",
+      "warning-restore-manually": "您正在手动恢复此提醒规则的旧版本。在保存规则定义之前，请仔细查看更改。",
+      "warning-restore-manually-title": "手动恢复规则"
+    },
     "alertform": {
       "labels": {
         "alerting": "向您的规则添加标签，以用于搜索、静音或路由到通知策略。",
@@ -568,48 +616,6 @@
       "name-filter-placeholder-search-alert-rules-by-name": "按名称搜索警报规则",
       "no-alert-rules-found": "找不到警报规则",
       "placeholder-sort-default-az": "排序（默认 A-Z）"
-    },
-    "alertVersionHistory": {
-      "alerting": "警报",
-      "alerting-change-description": "此更新由提醒系统根据其他更改进行。例如，当重命名用于简化路由的联络点时，将更新受影响的规则",
-      "annotations": "注释",
-      "compare": "比较",
-      "compare-with-latest": "与最新版本比较",
-      "compareVersions": "比较版本",
-      "comparing-versions": "比较版本",
-      "condition": "提醒条件",
-      "contactPointRouting": "联络点路由",
-      "description": "每次编辑提醒规则时，都会创建一个新版本。在下方选择两个版本，并比较它们的差异。",
-      "errorloading": "加载提醒规则版本失败",
-      "execErrorState": "执行错误时的提醒状态",
-      "intervalSeconds": "评估间隔",
-      "labels": "标签",
-      "latest": "最近",
-      "name": "名称",
-      "namespace_uid": "文件夹 UID",
-      "noDataState": "无数据时的提醒状态",
-      "noVersionsFound": "未找到此规则的版本",
-      "paused": "暂停状态",
-      "pendingPeriod": "待处理时段",
-      "provisioning": "配置",
-      "provisioning-change-description": "版本更新是通过配置进行的",
-      "queryAndAlertCondition": "查询和提醒条件",
-      "restore": "还原",
-      "restore-manually": "您的提醒规则无法还原。这可能是由于其他实体（如联络点、数据源等）的更改。请手动还原规则版本",
-      "restore-modal": {
-        "body": "您确定要将提醒规则定义还原到此版本吗？所有未保存的更改都将丢失。",
-        "confirm": "是，还原配置",
-        "error": "无法还原提醒规则版本",
-        "summary": "要应用的更改摘要：",
-        "title": "恢复版本"
-      },
-      "restore-version": "恢复到版本 {{version}}",
-      "rule_group": "规则组",
-      "unknown": "未知",
-      "unknown-change-description": "此更新是在实施提醒规则版本历史记录之前进行的。系统未跟踪进行更改的用户，但将来的更改将包括用户",
-      "user-id": "用户 ID {{uid}}",
-      "warning-restore-manually": "您正在手动恢复此提醒规则的旧版本。在保存规则定义之前，请仔细查看更改。",
-      "warning-restore-manually-title": "手动恢复规则"
     },
     "all-matches-indicator": {
       "content-this-policy-matches-all-labels": "此策略匹配所有标签"
@@ -880,8 +886,8 @@
         "parse-mode-warning-body": "如果使用 <3>None</3> 以外的 <1>parse_mode</1> 选项，文字截断可能会导致消息无效，从而导致通知发送失败。对于较长的消息，我们建议使用其他联系方式。",
         "parse-mode-warning-title": "Telegram 消息的最大长度为 4096 个 UTF-8 字符。"
       },
-      "used-by_other": "由 {{ count }} 个通知策略使用",
-      "used-by-rules_other": "由 {{ count }} 个提醒规则使用"
+      "used-by-rules_other": "由 {{ count }} 个提醒规则使用",
+      "used-by_other": "由 {{ count }} 个通知策略使用"
     },
     "contact-points-filter": {
       "aria-label-clear": "清除",
@@ -906,7 +912,7 @@
     },
     "contactPoints": {
       "validation": {
-        "notFound": ""
+        "notFound": "未找到联络点"
       }
     },
     "continue-matching-indicator": {
@@ -915,7 +921,7 @@
     "copy-to-clipboard": "将“{{label}}”复制到剪贴板",
     "create-metadata": {
       "label": {
-        "contact-point": "",
+        "contact-point": "通知已发送给",
         "dashboard": "仪表板",
         "dashboard-and-panel": "数据面板和面板",
         "evaluation-interval": "评估间隔",
@@ -1063,7 +1069,7 @@
       "content-show-all-errors": "显示所有错误"
     },
     "errors": {
-      "failedWith": ""
+      "failedWith": "{{-config}} 失败，状态：{{status}}，原因：{{-message}}"
     },
     "evaluate-every-validation-options": {
       "message": {
@@ -1529,7 +1535,7 @@
         "no-rules-body-yaml": "没有要导入的规则。请选择不同的 yaml 文件。",
         "no-rules-title": "没有要导入的规则",
         "not-using-rules-managed-by-integrations-or-plugins": {
-          "text": "",
+          "text": "不应将通过集成或插件管理的规则导入到Grafana管理的规则中。",
           "title": "信息"
         },
         "plugin-rules-warning": {
@@ -1904,7 +1910,7 @@
     },
     "notification-policies-filter": {
       "label-search-by-contact-point": "按联络点搜索",
-      "placeholder-search-by-contact-point": "",
+      "placeholder-search-by-contact-point": "选择一个联系点",
       "search-query-input-placeholder-search": "搜索"
     },
     "notification-policies-list": {
@@ -2034,6 +2040,7 @@
         },
         "inherited": "继承",
         "mute-time": "静音时间",
+        "n-instances_other": "实例",
         "timingOptions": {
           "groupInterval": {
             "description": "在首次通知发送后，对于新添加到提醒组中的提醒，要等待多久才能再次发送通知。",
@@ -2047,9 +2054,9 @@
             "description": "如果提醒组自上次通知以来没有更改，则多久发送一次通知。",
             "label": "每 <1></1> 重复一次"
           }
-        },
-        "n-instances_other": "实例"
+        }
       },
+      "n-more-policies_other": "其他 {{count}} 个策略",
       "new-child": "新的子策略",
       "new-policy": "添加新策略",
       "no-matchers": "没有匹配器",
@@ -2066,8 +2073,7 @@
         "fallback": "更新通知策略时出错。",
         "suffix": "请刷新页面并重试。",
         "title": "保存通知策略时出错"
-      },
-      "n-more-policies_other": "其他 {{count}} 个策略"
+      }
     },
     "policy": {
       "label-new-child-policy": "新的子策略",
@@ -2258,8 +2264,8 @@
       "label-tenant-sources": "租户源"
     },
     "rule-details-matching-instances": {
-      "showing-count": "显示 {{visibleItems}} 个实例，共 {{totalItems}} 个",
-      "button-show-all_other": "显示所有 {{totalItems}} 个警报实例"
+      "button-show-all_other": "显示所有 {{totalItems}} 个警报实例",
+      "showing-count": "显示 {{visibleItems}} 个实例，共 {{totalItems}} 个"
     },
     "rule-editor": {
       "get-content": {
@@ -2407,7 +2413,7 @@
         "new-badge": "全新！",
         "text": "导入到 Grafana 管理的规则"
       },
-      "loading-more-groups": "",
+      "loading-more-groups": "加载更多的组…",
       "more": "更多",
       "new-alert-rule": "新建警报规则",
       "new-datasource-recording-rule": "新的数据源录制规则",
@@ -2427,14 +2433,14 @@
       "unknown-rule-type": "未知规则类型"
     },
     "rule-list-errors": {
+      "button-errors_other": "{{count}} 个错误",
       "cloud-rulessource-errors-title-errors-loading-rules": "加载规则时出错",
       "failed-to-load-grafana-rules-config": "加载 Grafana 规则配置失败：",
       "failed-to-load-grafana-rules-state": "加载 Grafana 规则状态失败",
       "failed-to-load-rules-config": "加载来自 <2>{{dataSource}}</2> 的规则配置失败",
       "failed-to-load-rules-state": "加载来自 <2>{{dataSource}}</2> 的规则状态失败",
-      "unknown-error": "未知错误。",
-      "button-errors_other": "{{count}} 个错误",
-      "more-errors_other": "另外 {{count}} 个错误"
+      "more-errors_other": "另外 {{count}} 个错误",
+      "unknown-error": "未知错误。"
     },
     "rule-list-v1": {
       "collapse-all": "折叠全部",
@@ -2462,14 +2468,14 @@
       }
     },
     "rule-stats": {
+      "error_other": "{{count}} 个错误",
       "firing": "{{alertingStats}}正在触发",
       "inactive": "{{normalStats}} 正常",
       "nodata": "{{nodataStats}} 无数据",
       "paused": "{{normalStats}} 正常（{{pausedStats}} 已暂停）",
       "pending": "{{pendingStats}} 待处理",
       "recording": "{{recordingStats}} 正在录制",
-      "recovering": "{{recoveringStats}}正在恢复",
-      "error_other": "{{count}} 个错误"
+      "recovering": "{{recoveringStats}}正在恢复"
     },
     "rule-type-picker": {
       "grafana-managed": "选择“Grafana 托管”，除非您有启用了 Ruler API 的 Mimir、Loki 或 Cortex 数据源。"
@@ -2935,51 +2941,51 @@
     }
   },
   "alertlist": {
-    "category-alert-state-filter": "",
-    "category-filter": "",
-    "category-options": "",
-    "descriptino-alerts-linked-to-dashboard": "",
-    "description-alert-instance-label": "",
-    "description-alert-name": "",
-    "description-datasource": "",
-    "description-folder": "",
-    "description-group-by": "",
-    "description-group-mode": "",
-    "description-max-items": "",
-    "description-show-inactive-alerts": "",
-    "description-sort-order": "",
-    "description-view-mode": "",
+    "category-alert-state-filter": "警报状态过滤器",
+    "category-filter": "筛选",
+    "category-options": "选项",
+    "descriptino-alerts-linked-to-dashboard": "仅显示链接到此仪表板的警报",
+    "description-alert-instance-label": "使用标签查询的滤波器警报实例，例如：{criality =“ criality”，实例=〜“ cluster-us-。”}",
+    "description-alert-name": "过滤到包含此文本的警报",
+    "description-datasource": "从警报源过滤器",
+    "description-folder": "过滤选定文件夹中的警报（仅适用于Grafana管理的警报规则）",
+    "description-group-by": "使用标签查询的过滤警报",
+    "description-group-mode": "分组模式",
+    "description-max-items": "最大项目数",
+    "description-show-inactive-alerts": "显示未激活的警报",
+    "description-sort-order": "排序警报和警报实例",
+    "description-view-mode": "在列表视图和统计视图之间切换",
     "group-by": {
       "aria-label-group-by-label-keys": "按标签键分组",
       "placeholder-group-by": "分组依据"
     },
     "group-mode-options": {
-      "label-custom-grouping": "",
-      "label-default-grouping": ""
+      "label-custom-grouping": "自定义分组",
+      "label-default-grouping": "默认分组"
     },
-    "name-alert-instance-label": "",
-    "name-alert-name": "",
-    "name-alerts-linked-to-dashboard": "",
-    "name-datasource": "",
-    "name-error": "",
-    "name-firing": "",
-    "name-folder": "",
-    "name-group-by": "",
-    "name-group-mode": "",
-    "name-max-items": "",
-    "name-no-data": "",
-    "name-normal": "",
-    "name-pending": "",
-    "name-recovering": "",
-    "name-show-inactive-alerts": "",
-    "name-sort-order": "",
-    "name-view-mode": "",
+    "name-alert-instance-label": "警报实例标签",
+    "name-alert-name": "警报名称",
+    "name-alerts-linked-to-dashboard": "链接到此仪表板的警报",
+    "name-datasource": "数据源",
+    "name-error": "错误",
+    "name-firing": "警报 /射击",
+    "name-folder": "文件夹",
+    "name-group-by": "组",
+    "name-group-mode": "组模式",
+    "name-max-items": "最大项目",
+    "name-no-data": "没有数据",
+    "name-normal": "普通的",
+    "name-pending": "待办的",
+    "name-recovering": "恢复",
+    "name-show-inactive-alerts": "用0个实例显示警报",
+    "name-sort-order": "排序订单",
+    "name-view-mode": "查看模式",
     "sort-order-options": {
-      "label-alphabetical-asc": "",
-      "label-alphabetical-desc": "",
-      "label-importance": "",
-      "label-time-asc": "",
-      "label-time-desc": ""
+      "label-alphabetical-asc": "字母顺序（ASC）",
+      "label-alphabetical-desc": "字母顺序（DESC）",
+      "label-importance": "重要性",
+      "label-time-asc": "时间（ASC）",
+      "label-time-desc": "时间（DESC）"
     },
     "ungrouped-mode-view": {
       "active-for": "有效时长：<1>{{duration}}</1>",
@@ -2995,8 +3001,8 @@
       "title-permission-required": "需要权限"
     },
     "view-mode-options": {
-      "label-list": "",
-      "label-stat": ""
+      "label-list": "列表",
+      "label-stat": "统计"
     }
   },
   "annolist": {
@@ -3009,38 +3015,38 @@
     "annotation-list-item": {
       "tooltip-created-by": "创建人：<1></1>{{email}}"
     },
-    "category-annotation-query": "",
-    "category-display": "",
-    "category-link-behaviour": "",
-    "description-tags": "",
+    "category-annotation-query": "注释查询",
+    "category-display": "展示",
+    "category-link-behaviour": "链接行为",
+    "description-tags": "匹配注释标签",
     "link-target-options": {
-      "label-dashboard": "",
-      "label-panel": ""
+      "label-dashboard": "仪表板",
+      "label-panel": "控制板"
     },
-    "name-limit": "",
-    "name-link-target": "",
-    "name-query-filter": "",
-    "name-show-tags": "",
-    "name-show-time": "",
-    "name-show-user": "",
-    "name-tags": "",
-    "name-time-after": "",
+    "name-limit": "限制",
+    "name-link-target": "链接目标",
+    "name-query-filter": "查询过滤器",
+    "name-show-tags": "显示标签",
+    "name-show-time": "显示时间",
+    "name-show-user": "显示用户",
+    "name-tags": "标签",
+    "name-time-after": "之后的时间",
     "name-time-before": "",
-    "name-time-range": "",
+    "name-time-range": "时间范围",
     "query-filter-options": {
-      "label-all-dashboards": "",
-      "label-this-dashboard": ""
+      "label-all-dashboards": "全部仪表盘",
+      "label-this-dashboard": "这个仪表板"
     },
     "time-range-options": {
-      "label-none": "",
-      "label-this-dashboard": ""
+      "label-none": "没有任何",
+      "label-this-dashboard": "这个仪表板"
     }
   },
   "annotations": {
     "annotation-field-mapper": {
       "annotation": "注释",
       "first-value": "第一个值",
-      "from": ""
+      "from": "从"
     },
     "empty-state": {
       "button-title": "添加注释查询",
@@ -3209,8 +3215,8 @@
       }
     },
     "provider-card": {
-      "saml-learn-more": "",
-      "scim-learn-more": "",
+      "saml-learn-more": "与SAML的单一签名（SSO）。",
+      "scim-learn-more": "将用户和团队与Scim同步。",
       "text-badge-enabled": "已启用",
       "text-badge-not-enabled": "未启用"
     },
@@ -3246,99 +3252,99 @@
   },
   "bar-chart": {
     "warn": {
-      "missing-numeric": "",
-      "missing-series": ""
+      "missing-numeric": "找不到数字字段",
+      "missing-series": "条形图需要字符串或时间字段"
     }
   },
   "barchart": {
     "config": {
-      "category-thresholds": "",
-      "description-color-by-field": "",
+      "category-thresholds": "阈值",
+      "description-color-by-field": "使用兄弟姐妹字段的颜色值为每个条形值上色。",
       "description-x-label-max-length": "",
-      "name-bar-radius": "",
-      "name-bar-width": "",
+      "name-bar-radius": "圆角",
+      "name-bar-width": "柱宽",
       "name-color-by-field": "",
-      "name-fill-opacity": "",
-      "name-full-highlight": "",
-      "name-gradient-mode": "",
-      "name-group-width": "",
-      "name-line-width": "",
-      "name-orientation": "",
-      "name-rotate-x-labels": "",
-      "name-show-thresholds": "",
-      "name-show-values": "",
-      "name-stacking": "",
-      "name-transform": "",
-      "name-x-axis": "",
-      "name-x-label-max-length": "",
-      "name-x-label-min-spacing": "",
+      "name-fill-opacity": "填充透明度",
+      "name-full-highlight": "高亮鼠标悬浮区域",
+      "name-gradient-mode": "梯度模式",
+      "name-group-width": "组宽",
+      "name-line-width": "线宽",
+      "name-orientation": "方向",
+      "name-rotate-x-labels": "旋转X轴tick标签",
+      "name-show-thresholds": "显示阈值",
+      "name-show-values": "显示值",
+      "name-stacking": "堆叠",
+      "name-transform": "转换",
+      "name-x-axis": "x轴",
+      "name-x-label-max-length": "X轴tick标签最大长度",
+      "name-x-label-min-spacing": "X轴标签最小间距",
       "orientation-options": {
-        "label-auto": "",
-        "label-horizontal": "",
-        "label-line-vertical": ""
+        "label-auto": "自动",
+        "label-horizontal": "水平的",
+        "label-line-vertical": "垂直的"
       },
-      "placeholder-x-axis": "",
-      "placeholder-x-label-max-length": "",
+      "placeholder-x-axis": "第一个字符串或时间字段",
+      "placeholder-x-label-max-length": "没有任何",
       "show-values-options": {
-        "label-always": "",
-        "label-auto": "",
-        "label-never": ""
+        "label-always": "总是",
+        "label-auto": "自动",
+        "label-never": "绝不"
       },
       "transform-options": {
-        "description-constant": "",
-        "description-negative-y": "",
-        "label-constant": "",
-        "label-negative-y": ""
+        "description-constant": "第一个值将显示为恒定线",
+        "description-negative-y": "将结果翻转为Y轴的负值",
+        "label-constant": "持续的",
+        "label-negative-y": "负y"
       }
     },
     "tick-spacing-editor": {
       "content-require-space-from-the-right-side": "需要右侧的空间",
       "gaps-options": {
-        "description-large": "",
-        "description-medium": "",
-        "description-none": "",
-        "description-small": "",
-        "label-large": "",
+        "description-large": "需要{{spacing}}间距",
+        "description-medium": "需要{{spacing}}间距",
+        "description-none": "显示所有tick痕迹",
+        "description-small": "需要{{spacing}}间距",
+        "label-large": "大的",
         "label-medium": "",
         "label-none": "",
-        "label-small": ""
+        "label-small": "小的"
       },
       "label-rtl": "从右到左"
     }
   },
   "bargauge": {
     "bar-size-options": {
-      "label-auto": "",
-      "label-manual": ""
+      "label-auto": "自动",
+      "label-manual": "手动的"
     },
-    "category-bar-gauge": "",
-    "description-max-height": "",
-    "description-min-height": "",
-    "description-min-width": "",
-    "description-show-unfilled-area": "",
+    "category-bar-gauge": "钢筋仪",
+    "description-max-height": "最大行高（水平方向）",
+    "description-min-height": "最小行高（水平方向）",
+    "description-min-width": "最小柱宽度（垂直方向）",
+    "description-show-unfilled-area": "当启用时，将未填充的区域呈现为灰色",
     "display-mode-options": {
-      "label-basic": "",
-      "label-gradient": "",
-      "label-retro": ""
+      "label-basic": "基本的",
+      "label-gradient": "坡度",
+      "label-retro": "复古LCD"
     },
-    "name-bar-size": "",
+    "name-bar-size": "条尺寸",
     "name-display-mode": "",
-    "name-max-height": "",
-    "name-min-height": "",
-    "name-min-width": "",
-    "name-name-placement": "",
+    "name-max-height": "最大高度",
+    "name-min-height": "最小高度",
+    "name-min-width": "最小宽度",
+    "name-name-placement": "名称位置",
     "name-placement-options": {
-      "label-auto": "",
-      "label-hidden": "",
-      "label-left": "",
-      "label-top": ""
+      "label-auto": "自动",
+      "label-hidden": "隐",
+      "label-left": "左边",
+      "label-top": "顶部"
     },
-    "name-show-unfilled-area": "",
-    "name-value-display": "",
+    "name-show-unfilled-area": "显示未填充的区域",
+    "name-value-display": "价值显示",
     "value-display-options": {
-      "label-hidden": "",
-      "label-text-color": "",
-      "label-value-color": ""
+      "label-hidden": "隐",
+      "label-text-color": "文字颜色",
+      "label-value-color": "价值颜色"
     }
   },
   "bookmarks-page": {
@@ -3361,7 +3367,7 @@
       "delete-modal-restore-dashboards-text": "此操作将立即删除所选文件夹，但所选数据面板将被标记为在 30 天后删除。您的组织管理员可以在 30 天期限内随时还原数据面板。文件夹无法还原。",
       "delete-modal-text": "此操作将删除以下内容：",
       "delete-modal-title": "删除",
-      "delete-provisioned-folder": "",
+      "delete-provisioned-folder": "删除配置文件夹",
       "deleting": "正在删除...",
       "manage-permissions-button": "管理权限",
       "move-button": "移动",
@@ -3398,12 +3404,12 @@
       "tags-column": "标签"
     },
     "delete-provisioned-folder-form": {
-      "alert-folder-deleted-successfully": "",
-      "api-error": "",
-      "button-cancel": "",
-      "button-delete": "",
-      "button-deleting": "",
-      "delete-warning": ""
+      "alert-folder-deleted-successfully": "文件夹成功删除了",
+      "api-error": "无法删除文件夹",
+      "button-cancel": "取消",
+      "button-delete": "删除",
+      "button-deleting": "删除...",
+      "delete-warning": "这将删除此文件夹及其所有后代。\n总体而言，这将影响："
     },
     "descendant-count": {
       "title-unable-to-retrieve-descendant-information": "无法检索后代信息"
@@ -3468,20 +3474,20 @@
       "text": "未找到与您的查询相关的结果"
     },
     "restore": {
-      "success": ""
+      "success": "仪表板{{name}}还原"
     },
     "text-this-repository-is-read-only": "如果您可以直接访问目标，请复制 JSON 并将其粘贴到那里。",
     "trash-state-manager": {
       "label": {
-        "alphabetically-az": "",
-        "alphabetically-za": ""
+        "alphabetically-az": "字母顺序（A – Z）",
+        "alphabetically-za": "字母顺序（z – a）"
       }
     }
   },
   "candlestick": {
     "additional-fields-options": {
-      "label-ignore": "",
-      "label-include": ""
+      "label-ignore": "忽略",
+      "label-include": "包括"
     },
     "candle-style-options": {
       "label-candles": "",
@@ -3492,28 +3498,28 @@
       "label-since-open": "",
       "label-since-prior-close": ""
     },
-    "description-additional-fields": "",
-    "description-close": "",
-    "description-high": "",
-    "description-low": "",
-    "description-open": "",
-    "description-volume": "",
+    "description-additional-fields": "使用标准的时间表选项来配置任何未映射的字段",
+    "description-close": "期末的价值",
+    "description-high": "在此期间的最大值",
+    "description-low": "最低价值",
+    "description-open": "时期开始时的价值",
+    "description-volume": "在此期间的样本计数",
     "mode-options": {
-      "label-both": "",
-      "label-candles": "",
-      "label-volume": ""
+      "label-both": "两个都",
+      "label-candles": "蜡烛",
+      "label-volume": "体积"
     },
-    "name-additional-fields": "",
-    "name-candle-style": "",
-    "name-close": "",
-    "name-color-strategy": "",
-    "name-down-color": "",
-    "name-high": "",
-    "name-low": "",
-    "name-mode": "",
-    "name-open": "",
-    "name-up-color": "",
-    "name-volume": ""
+    "name-additional-fields": "其他字段",
+    "name-candle-style": "蜡烛风格",
+    "name-close": "关闭",
+    "name-color-strategy": "颜色策略",
+    "name-down-color": "下色",
+    "name-high": "高的",
+    "name-low": "低的",
+    "name-mode": "模式",
+    "name-open": "打开",
+    "name-up-color": "颜色",
+    "name-volume": "体积"
   },
   "canvas": {
     "apieditor": {
@@ -3528,18 +3534,18 @@
       }
     },
     "button-item": {
-      "category-button": "",
+      "category-button": "按钮",
       "label": {
         "center": "中心",
         "left": "左侧",
         "right": "右侧"
       },
-      "name-align-text": "",
-      "name-api": "",
-      "name-style": "",
-      "name-text": "",
-      "name-text-color": "",
-      "name-text-size": "",
+      "name-align-text": "对齐文字",
+      "name-api": "API",
+      "name-style": "风格",
+      "name-text": "文本",
+      "name-text-color": "文字颜色",
+      "name-text-size": "文字大小",
       "placeholder": {
         "auto": "自动"
       }
@@ -3566,14 +3572,14 @@
         }
       }
     },
-    "category-arrow-direction": "",
-    "category-background": "",
-    "category-border": "",
-    "category-canvas": "",
-    "category-color": "",
-    "category-data-links": "",
-    "category-line-style": "",
-    "category-metric-value": "",
+    "category-arrow-direction": "箭头方向",
+    "category-background": "背景",
+    "category-border": "边界",
+    "category-canvas": "帆布",
+    "category-color": "颜色",
+    "category-data-links": "数据链接和动作",
+    "category-line-style": "线样式",
+    "category-metric-value": "度量值",
     "category-radius": "",
     "category-selected-connection": "",
     "category-selected-element": "",
@@ -3588,48 +3594,48 @@
         "right": "右侧",
         "top": "顶部"
       },
-      "name-align-text": "",
-      "name-text": "",
-      "name-text-color": "",
-      "name-text-size": "",
-      "name-vertical-align": "",
+      "name-align-text": "对齐文字",
+      "name-text": "文本",
+      "name-text-color": "文字颜色",
+      "name-text-size": "文字大小",
+      "name-vertical-align": "垂直对齐",
       "placeholder": {
         "auto": "自动"
       }
     },
-    "description-experimental-types": "",
-    "description-infinite-panning": "",
-    "description-inline-editing": "",
+    "description-experimental-types": "启用实验元素类型的选择",
+    "description-infinite-panning": "启用无限平移 - 可用于宽敞的画布。\n警告：这是一个实验功能，目前仅适用于顶部 /左约束的元素",
+    "description-inline-editing": "启用直接编辑面板",
     "description-pan-zoom": "",
     "direction-options": {
       "label-both": "",
-      "label-forward": "",
-      "label-none": "",
-      "label-reverse": ""
+      "label-forward": "向前",
+      "label-none": "没有任何",
+      "label-reverse": "撤销"
     },
     "drone-front-item": {
-      "category-drone-front": "",
-      "name-roll-angle": ""
+      "category-drone-front": "无人机正面",
+      "name-roll-angle": "滚动角"
     },
     "drone-side-item": {
-      "category-drone-side": "",
-      "name-pitch-angle": ""
+      "category-drone-side": "无人机一侧",
+      "name-pitch-angle": "音高角"
     },
     "drone-top-item": {
-      "category-drone-top": "",
-      "name-back-left-rotor-rpm": "",
-      "name-back-right-rotor-rpm": "",
-      "name-front-left-rotor-rpm": "",
-      "name-front-right-rotor-rpm": "",
-      "name-yaw-angle": ""
+      "category-drone-top": "无人机上衣",
+      "name-back-left-rotor-rpm": "后左转子RPM",
+      "name-back-right-rotor-rpm": "后右转子RPM",
+      "name-front-left-rotor-rpm": "左前转子RPM",
+      "name-front-right-rotor-rpm": "右前转子RPM",
+      "name-yaw-angle": "偏航角"
     },
     "element-editor": {
-      "category-layout": "",
-      "description-unsupported": "",
-      "name-quick-placement": ""
+      "category-layout": "布局",
+      "description-unsupported": "当前设置不支持选定的元素类型。\n请启用高级元素类型。",
+      "name-quick-placement": "快速放置"
     },
     "ellipse-item": {
-      "category-ellipse": "",
+      "category-ellipse": "椭圆",
       "label": {
         "bottom": "底部",
         "center": "中心",
@@ -3638,19 +3644,19 @@
         "right": "右侧",
         "top": "顶部"
       },
-      "name-align-text": "",
-      "name-text": "",
-      "name-text-color": "",
-      "name-text-size": "",
-      "name-vertical-align": "",
+      "name-align-text": "对齐文字",
+      "name-text": "文本",
+      "name-text-color": "文字颜色",
+      "name-text-size": "文字大小",
+      "name-vertical-align": "垂直对齐",
       "placeholder": {
         "auto": "自动"
       }
     },
     "icon-item": {
-      "category-icon": "",
-      "name-fill-color": "",
-      "name-svg-path": ""
+      "category-icon": "图标",
+      "name-fill-color": "填充颜​​色",
+      "name-svg-path": "SVG路径"
     },
     "inline-edit": {
       "canvas-inline-editor": "画布内联编辑器",
@@ -3663,25 +3669,25 @@
     },
     "label-actions": "",
     "label-color": "",
-    "label-direction": "",
+    "label-direction": "方向",
     "label-image": "",
-    "label-image-size": "",
-    "label-line-style": "",
-    "label-links": "",
-    "label-radius": "",
-    "label-size": "",
-    "label-width": "",
+    "label-image-size": "图像大小",
+    "label-line-style": "线样式",
+    "label-links": "链接",
+    "label-radius": "半径",
+    "label-size": "尺寸",
+    "label-width": "宽度",
     "layer-editor": {
-      "category-layer": "",
-      "category-layout": "",
-      "name-constraints": "",
-      "name-elements": ""
+      "category-layer": "层",
+      "category-layout": "布局",
+      "name-constraints": "约束",
+      "name-elements": "元素"
     },
     "line-style-editor": {
       "label-animate": "动画"
     },
     "line-style-options": {
-      "label-solid": ""
+      "label-solid": "坚硬的"
     },
     "metric-value-item": {
       "label": {
@@ -3696,15 +3702,15 @@
         "auto": "自动"
       }
     },
-    "name-align-text": "",
-    "name-color": "",
-    "name-experimental-types": "",
-    "name-infinite-panning": "",
-    "name-inline-editing": "",
-    "name-pan-zoom": "",
-    "name-text": "",
-    "name-text-size": "",
-    "name-vertical-align": "",
+    "name-align-text": "对齐文字",
+    "name-color": "文字颜色",
+    "name-experimental-types": "实验元素类型",
+    "name-infinite-panning": "无限平移",
+    "name-inline-editing": "内联编辑",
+    "name-pan-zoom": "锅和变焦",
+    "name-text": "文本",
+    "name-text-size": "文字大小",
+    "name-vertical-align": "垂直对齐",
     "not-found-display": {
       "not-found": "<0>未找到：</0><config />"
     },
@@ -3717,7 +3723,7 @@
       "zoom-scroll-wheel": "缩放：滚轮"
     },
     "parallelogram-item": {
-      "category-parallelogram": "",
+      "category-parallelogram": "平行四边形",
       "label": {
         "bottom": "底部",
         "center": "中心",
@@ -3726,11 +3732,11 @@
         "right": "右侧",
         "top": "顶部"
       },
-      "name-align-text": "",
-      "name-text": "",
-      "name-text-color": "",
-      "name-text-size": "",
-      "name-vertical-align": "",
+      "name-align-text": "对齐文字",
+      "name-text": "文本",
+      "name-text-color": "文字颜色",
+      "name-text-size": "文字大小",
+      "name-vertical-align": "垂直对齐",
       "placeholder": {
         "auto": "自动"
       }
@@ -3743,9 +3749,9 @@
     },
     "placement-editor": {
       "horizontal-options": {
-        "label-center": "",
-        "label-left": "",
-        "label-left-and-right": "",
+        "label-center": "中心",
+        "label-left": "左边",
+        "label-left-and-right": "左边",
         "label-right": "",
         "label-scale": ""
       },
@@ -3757,7 +3763,7 @@
         "label-center": "",
         "label-scale": "",
         "label-top": "",
-        "label-top-and-bottom": ""
+        "label-top-and-bottom": "顶部"
       }
     },
     "quick-positioning": {
@@ -3769,7 +3775,7 @@
       "tooltip-align-vertical-centers": "垂直居中对齐"
     },
     "rectangle-item": {
-      "category-rectangle": "",
+      "category-rectangle": "长方形",
       "label": {
         "bottom": "底部",
         "center": "中心",
@@ -3778,33 +3784,33 @@
         "right": "右侧",
         "top": "顶部"
       },
-      "name-align-text": "",
-      "name-text": "",
-      "name-text-color": "",
-      "name-text-size": "",
-      "name-vertical-align": "",
+      "name-align-text": "对齐文字",
+      "name-text": "文本",
+      "name-text-color": "文字颜色",
+      "name-text-size": "文字大小",
+      "name-vertical-align": "垂直对齐",
       "placeholder": {
         "auto": "自动"
       }
     },
     "server-item": {
-      "category-server": "",
-      "name-blink-rate": "",
-      "name-bulb-color": "",
+      "category-server": "服务器",
+      "name-blink-rate": "眨眼率[Hz]（0 = OFF）",
+      "name-bulb-color": "灯泡颜色",
       "name-status-color": "",
       "name-type": "",
       "type-options": {
-        "label-database": "",
-        "label-single": "",
-        "label-stack": "",
-        "label-terminal": ""
+        "label-database": "数据库",
+        "label-single": "单值",
+        "label-stack": "堆",
+        "label-terminal": "终端"
       }
     },
     "text-display": {
       "double-click-to-set": "双击以设置文本"
     },
     "text-item": {
-      "category-text": "",
+      "category-text": "文本",
       "label": {
         "bottom": "底部",
         "center": "中心",
@@ -3813,9 +3819,9 @@
         "right": "右侧",
         "top": "顶部"
       },
-      "name-align-text": "",
-      "name-text": "",
-      "name-text-color": "",
+      "name-align-text": "对齐文字",
+      "name-text": "文本",
+      "name-text-color": "文字颜色",
       "name-text-size": "",
       "name-vertical-align": "",
       "placeholder": {
@@ -3839,7 +3845,7 @@
       "tooltip-remove": "删除"
     },
     "triangle-item": {
-      "category-triangle": "",
+      "category-triangle": "三角形",
       "label": {
         "bottom": "底部",
         "center": "中心",
@@ -3848,18 +3854,18 @@
         "right": "右侧",
         "top": "顶部"
       },
-      "name-align-text": "",
+      "name-align-text": "对齐文字",
       "name-text": "",
-      "name-text-color": "",
-      "name-text-size": "",
-      "name-vertical-align": "",
+      "name-text-color": "文字颜色",
+      "name-text-size": "文字大小",
+      "name-vertical-align": "垂直对齐",
       "placeholder": {
         "auto": "自动"
       }
     },
     "wind-turbine-item": {
-      "category-wind-turbine": "",
-      "name-rpm": ""
+      "category-wind-turbine": "风力涡轮机",
+      "name-rpm": "RPM"
     }
   },
   "carousel": {
@@ -3876,7 +3882,7 @@
   "close-button": {
     "tooltip": "关闭"
   },
-  "cloud-enterprise-feature-badge": "",
+  "cloud-enterprise-feature-badge": "云",
   "combobox": {
     "async": {
       "error": "加载选项时发生错误。"
@@ -4404,7 +4410,7 @@
       }
     },
     "description": {
-      "action": ""
+      "action": "更改仪表板说明"
     },
     "dynamic-config-value-editor": {
       "render-label": {
@@ -4413,12 +4419,12 @@
     },
     "edit-actions": {
       "add": "添加{{typeName}}",
-      "move": "",
+      "move": "移动{{typeName}}",
       "panel-background": "更改面板背景",
       "panel-description": "更改面板描述",
-      "panel-max-repeats-per-row": "",
+      "panel-max-repeats-per-row": "每行最大重复",
       "panel-repeat-direction": "重复方向",
-      "panel-repeat-variable": "",
+      "panel-repeat-variable": "面板重复",
       "panel-title": "更改面板标题",
       "paste-panel": "粘贴面板",
       "remove": "移除{{typeName}}",
@@ -4537,7 +4543,7 @@
     "get-field-override-categories": {
       "label-add-field-override": "添加字段覆盖",
       "label-add-override-property": "添加覆盖属性",
-      "override-name": "",
+      "override-name": "覆盖{{{OverrideNum}}",
       "title": {
         "add-button": "添加按钮"
       }
@@ -4744,8 +4750,8 @@
       "title-option": "标题"
     },
     "options-pane-options": {
-      "placeholder-search-options": "搜索选项",
       "Recent options-title-recent-options": "最近的选项",
+      "placeholder-search-options": "搜索选项",
       "title-matched_other": "匹配了 {{count}}/{{totalCount}} 个选项"
     },
     "outline": {
@@ -5401,12 +5407,12 @@
       }
     },
     "delete-provisioned-dashboard-form": {
-      "api-error": "",
+      "api-error": "无法删除仪表板",
       "cancel-action": "取消",
       "delete-action": "删除数据面板",
-      "delete-read-only-file-message": "",
+      "delete-read-only-file-message": "由于存储库是只读的，因此无法直接从Grafana中删除此仪表板。\n要删除此仪表板，请从您的GIT存储库中删除文件。",
       "deleting": "正在删除...",
-      "drawer-title": "",
+      "drawer-title": "删除配置仪表板",
       "title-this-repository-is-read-only": "此存储库为只读"
     },
     "description-label": {
@@ -5420,7 +5426,7 @@
       }
     },
     "edit-provisioned-dashboard-form": {
-      "success": ""
+      "success": "仪表板更改成功保存"
     },
     "email-list": {
       "aria-label-emailmenu": "切换电子邮件菜单"
@@ -5541,7 +5547,7 @@
       }
     },
     "panel-data-alerting-tab": {
-      "tab-label": ""
+      "tab-label": "警报"
     },
     "panel-data-alerting-tab-rendered": {
       "alert": {
@@ -5552,14 +5558,14 @@
       "title-dashboard-not-saved": "数据面板未保存"
     },
     "panel-data-queries-tab": {
-      "tab-label": ""
+      "tab-label": "查询"
     },
     "panel-data-queries-tab-rendered": {
       "add-query": "添加查询",
       "expression": "表达式"
     },
     "panel-data-transformations-tab": {
-      "tab-label": ""
+      "tab-label": "转型"
     },
     "panel-data-transformations-tab-rendered": {
       "add-another-transformation": "添加其他转换",
@@ -5654,8 +5660,8 @@
         "label-changes": "变更",
         "label-details": "详情",
         "title": "保存仪表板",
-        "title-copy": "",
-        "title-provisioned": ""
+        "title-copy": "保存仪表板副本",
+        "title-provisioned": "配置仪表板"
       }
     },
     "save-dashboard-form": {
@@ -5687,13 +5693,13 @@
       "save-variables-label-update-default-variable-values": "更新默认变量值"
     },
     "save-library-viz-panel-modal": {
+      "affected-dashboards_other": "此更新将影响 <1>{{count}} 个数据面板。</1> 使用该面板的以下数据面板将受到影响：",
       "cancel": "取消",
       "dashboard-name": "数据面板名称",
       "discard": "丢弃",
       "loading-connected-dashboards": "正在加载已关联的数据面板...",
       "placeholder-search-affected-dashboards": "搜索受影响的数据面板",
-      "update-all": "全部更新",
-      "affected-dashboards_other": "此更新将影响 <1>{{count}} 个数据面板。</1> 使用该面板的以下数据面板将受到影响："
+      "update-all": "全部更新"
     },
     "save-provisioned-dashboard-form": {
       "api-error": "保存数据面板时出错",
@@ -5948,17 +5954,17 @@
   },
   "dashlist": {
     "category-dashboard-list": "",
-    "name-folder": "",
-    "name-include-current-template-variables": "",
-    "name-include-current-time-range": "",
-    "name-max-items": "",
-    "name-query": "",
-    "name-recently-viewed": "",
-    "name-search": "",
-    "name-show-folder-names": "",
-    "name-show-headings": "",
-    "name-starred": "",
-    "name-tags": ""
+    "name-folder": "文件夹",
+    "name-include-current-template-variables": "包括当前的模板变量值",
+    "name-include-current-time-range": "包括当前时间范围",
+    "name-max-items": "最大项目",
+    "name-query": "询问",
+    "name-recently-viewed": "最近查看",
+    "name-search": "搜索",
+    "name-show-folder-names": "显示文件夹名称",
+    "name-show-headings": "显示标题",
+    "name-starred": "出演",
+    "name-tags": "标签"
   },
   "data-source-list": {
     "empty-state": {
@@ -6220,15 +6226,15 @@
   "dimensions": {
     "background-size-editor": {
       "options": {
-        "label-contain": "",
-        "label-cover": "",
-        "label-fill": "",
+        "label-contain": "包含",
+        "label-cover": "覆盖",
+        "label-fill": "充满",
         "label-original": "",
-        "label-tile": ""
+        "label-tile": "瓦"
       }
     },
     "color-dimension-editor": {
-      "label-fixed-color": ""
+      "label-fixed-color": "固定颜色"
     },
     "file-dropzone-custom-children": {
       "upload": "上传"
@@ -6242,10 +6248,10 @@
       "placeholder-search": "搜索"
     },
     "resource-dimension-editor": {
-      "description-field": "",
-      "description-fixed": "",
+      "description-field": "使用字符串字段结果",
+      "description-fixed": "固定值",
       "label-field": "字段",
-      "label-fixed": "",
+      "label-fixed": "固定的",
       "label-mappings": "映射",
       "label-source": "源"
     },
@@ -6262,15 +6268,15 @@
     },
     "scalar-dimension-editor": {
       "fixed-value-options": {
-        "label-fixed-values": ""
+        "label-fixed-values": "固定值"
       },
       "label-limit": "限制",
       "label-value": "值",
       "scalar-options": {
-        "description-clamped": "",
-        "description-mod": "",
-        "label-clamped": "",
-        "label-mod": ""
+        "description-clamped": "使用磁场值，夹紧到最大和最小",
+        "description-mod": "使用字段值，MAD来自Max",
+        "label-clamped": "夹紧",
+        "label-mod": "mod"
       }
     },
     "scale-dimension-editor": {
@@ -6279,10 +6285,10 @@
       "label-value": "值"
     },
     "text-dimension-editor": {
-      "description-field": "",
-      "description-fixed": "",
+      "description-field": "显示字段值",
+      "description-fixed": "固定值",
       "label-field": "字段",
-      "label-fixed": "",
+      "label-fixed": "固定的",
       "label-source": "源",
       "label-template": "模板",
       "label-value": "值"
@@ -6296,8 +6302,8 @@
       "description-percentage-means-thresholds-relative": "百分比表示阈值相对于最小值和最大值的比例",
       "modes": {
         "description": {
-          "threshold-based-percent-between-minmax": "",
-          "thresholds-based-absolute-values": ""
+          "threshold-based-percent-between-minmax": "根据最小/最大之间的百分比选择阈值",
+          "thresholds-based-absolute-values": "根据绝对值选择阈值"
         },
         "label": {
           "absolute": "",
@@ -6305,7 +6311,7 @@
         }
       },
       "thresholds-mode": "阈值模式",
-      "value-base": ""
+      "value-base": "根据"
     },
     "urlpicker-tab": {
       "label-preview": "预览"
@@ -6314,7 +6320,7 @@
       "duplicate-value-mapping-aria-label-duplicate-value-mapping": "重复值映射",
       "duplicate-value-mapping-tooltip-duplicate": "复制",
       "placeholder-exact-value-to-match": "要匹配的精确值",
-      "placeholder-from": "",
+      "placeholder-from": "从",
       "placeholder-optional-display-text": "可选显示文本",
       "placeholder-regular-expression": "正则表达式",
       "placeholder-to": "结束",
@@ -7100,23 +7106,23 @@
     "title": "离开页面？"
   },
   "gauge": {
-    "category-gauge": "",
-    "description-min-height": "",
-    "description-min-width": "",
-    "description-neutral": "",
-    "description-show-threshold-labels": "",
-    "description-show-threshold-markers": "",
+    "category-gauge": "测量",
+    "description-min-height": "最小行高（水平方向）",
+    "description-min-width": "最小柱宽度（垂直方向）",
+    "description-neutral": "空白以将最小作为中性点",
+    "description-show-threshold-labels": "渲染量规条周围的阈值",
+    "description-show-threshold-markers": "将阈值作为外栏",
     "gauge-size-options": {
-      "label-auto": "",
-      "label-manual": ""
+      "label-auto": "自动",
+      "label-manual": "手动的"
     },
-    "name-gauge-size": "",
-    "name-min-height": "",
-    "name-min-width": "",
-    "name-neutral": "",
-    "name-show-threshold-labels": "",
-    "name-show-threshold-markers": "",
-    "placeholder-neutral": ""
+    "name-gauge-size": "量规尺寸",
+    "name-min-height": "最小高度",
+    "name-min-width": "最小宽度",
+    "name-neutral": "中性的",
+    "name-show-threshold-labels": "显示阈值标签",
+    "name-show-threshold-markers": "显示阈值标记",
+    "placeholder-neutral": "自动"
   },
   "gen-ai": {
     "apply-suggestion": "应用",
@@ -7350,85 +7356,85 @@
     },
     "builder": {
       "axis": {
-        "category-axis": "",
-        "color-label": "",
+        "category-axis": "轴",
+        "color-label": "颜色",
         "color-options": {
-          "label-series": "",
-          "label-text": ""
+          "label-series": "系列",
+          "label-text": "文本"
         },
         "grid-line-options": {
-          "label-auto": "",
-          "label-off": "",
-          "label-on": ""
+          "label-auto": "自动",
+          "label-off": "离开",
+          "label-on": "在"
         },
-        "name-centered-zero": "",
-        "name-grid-lines": "",
-        "name-label": "",
-        "name-placement": "",
-        "name-scale": "",
-        "name-show-border": "",
-        "name-soft-max": "",
-        "name-soft-min": "",
-        "name-width": "",
-        "placeholder-label": "",
-        "placeholder-soft-max": "",
-        "placeholder-soft-min": "",
-        "placeholder-width": "",
+        "name-centered-zero": "中心零",
+        "name-grid-lines": "显示网格线",
+        "name-label": "标签",
+        "name-placement": "放置",
+        "name-scale": "规模",
+        "name-show-border": "展示边界",
+        "name-soft-max": "柔软的最大",
+        "name-soft-min": "软最小",
+        "name-width": "宽度",
+        "placeholder-label": "可选文字",
+        "placeholder-soft-max": "请参阅：标准选项>最大选项",
+        "placeholder-soft-min": "请参阅：标准选项>最低",
+        "placeholder-width": "自动",
         "scale-distribution-editor": {
           "distribution-options": {
-            "label-linear": "",
-            "label-log": "",
-            "label-symlog": ""
+            "label-linear": "线性",
+            "label-log": "对数",
+            "label-symlog": "对称"
           }
         }
       },
       "legend": {
-        "category": "",
-        "description-values": "",
+        "category": "图例",
+        "description-values": "选择图例中显示的值或计算",
         "mode-options": {
-          "label-list": "",
-          "label-table": ""
+          "label-list": "列表",
+          "label-table": "表格"
         },
-        "name-mode": "",
-        "name-placement": "",
-        "name-values": "",
-        "name-visibility": "",
-        "name-width": "",
+        "name-mode": "模式",
+        "name-placement": "放置",
+        "name-values": "值",
+        "name-visibility": "可见",
+        "name-width": "宽度",
         "placement-options": {
-          "label-bottom": "",
-          "label-right": ""
+          "label-bottom": "底部",
+          "label-right": "右侧"
         }
       },
       "stacking": {
         "name-stack-series": ""
       },
       "text": {
-        "category-text-size": "",
-        "name-percent-change": "",
-        "name-title": "",
-        "name-value": "",
+        "category-text-size": "文字大小",
+        "name-percent-change": "百分比变化",
+        "name-title": "标题",
+        "name-value": "值",
         "placeholder-percent-change": "",
         "placeholder-title": "",
-        "placeholder-value": ""
+        "placeholder-value": "自动"
       },
       "tooltip": {
-        "category": "",
-        "description-hover-proximity": "",
+        "category": "工具提示",
+        "description-hover-proximity": "光标必须有多近的位置，以触发工具提示的点，以像素为单位",
         "modeOptions": {
-          "label-all": "",
-          "label-hidden": "",
-          "label-single": ""
+          "label-all": "全部",
+          "label-hidden": "隐藏",
+          "label-single": "单值"
         },
-        "name-hide-zeros": "",
-        "name-hover-proximity": "",
-        "name-max-height": "",
-        "name-max-width": "",
-        "name-tooltip-mode": "",
-        "name-values-sort-order": "",
+        "name-hide-zeros": "隐藏零",
+        "name-hover-proximity": "悬停接近",
+        "name-max-height": "最大高度",
+        "name-max-width": "最大宽度",
+        "name-tooltip-mode": "工具提示模式",
+        "name-values-sort-order": "值排序顺序",
         "sortOptions": {
-          "label-ascending": "",
-          "label-descending": "",
-          "label-none": ""
+          "label-ascending": "上升",
+          "label-descending": "下降",
+          "label-none": "没有任何"
         }
       }
     },
@@ -7589,19 +7595,19 @@
       "tooltip-expand-all": "展开所有行"
     },
     "matchers-ui": {
-      "description-field-name-by-regex-matcher": "",
-      "description-fields-by-query": "",
-      "description-fields-with-name": "",
-      "description-fields-with-type": "",
-      "description-fields-with-value": "",
+      "description-field-name-by-regex-matcher": "设置字段的属性，名称与正则匹配",
+      "description-fields-by-query": "从特定查询设置字段的属性",
+      "description-fields-with-name": "设置特定字段的属性",
+      "description-fields-with-type": "设置特定类型字段的属性（数字，字符串，布尔值）",
+      "description-fields-with-value": "设置具有还原条件的字段的属性",
       "field-name-picker": {
-        "placeholder": ""
+        "placeholder": "选择字段"
       },
-      "name-field-name-by-regex-matcher": "",
-      "name-fields-by-query": "",
-      "name-fields-with-name": "",
-      "name-fields-with-type": "",
-      "name-fields-with-value": ""
+      "name-field-name-by-regex-matcher": "带有姓名匹配正则义务的字段",
+      "name-fields-by-query": "查询返回的字段",
+      "name-fields-with-name": "带有名称的字段",
+      "name-fields-with-type": "带类型的字段",
+      "name-fields-with-value": "具有值的字段"
     },
     "menu-item": {
       "keyboard-shortcut-label": "键盘快捷键"
@@ -7719,55 +7725,55 @@
       "config": {
         "get-graph-field-options": {
           "axis-placement": {
-            "description-auto": "",
-            "label-auto": "",
-            "label-hidden": "",
-            "label-left": "",
-            "label-right": ""
+            "description-auto": "左侧的第一个字段，右边的其他所有内容",
+            "label-auto": "自动",
+            "label-hidden": "隐",
+            "label-left": "左边",
+            "label-right": "正确的"
           },
           "bar-alignment": {
-            "description-after": "",
-            "description-before": "",
-            "description-center": ""
+            "description-after": "后",
+            "description-before": "前",
+            "description-center": "中心"
           },
           "draw-style": {
-            "label-bars": "",
-            "label-lines": "",
-            "label-points": ""
+            "label-bars": "柱",
+            "label-lines": "线",
+            "label-points": "点"
           },
           "fill-gradient": {
-            "description-hue": "",
-            "description-opacity": "",
-            "description-scheme": "",
-            "label-hue": "",
-            "label-none": "",
-            "label-opacity": "",
-            "label-scheme": ""
+            "description-hue": "小色调渐变",
+            "description-opacity": "启用填充不透明度渐变",
+            "description-scheme": "使用配色方案定义渐变",
+            "label-hue": "色调",
+            "label-none": "无",
+            "label-opacity": "不透明度",
+            "label-scheme": "方案"
           },
           "line-interpolation": {
-            "description-linear": "",
-            "description-smooth": "",
-            "description-step-after": "",
-            "description-step-before": ""
+            "description-linear": "线性",
+            "description-smooth": "光滑的",
+            "description-step-after": "一步之后",
+            "description-step-before": "一步"
           },
           "show-points": {
-            "description-auto": "",
-            "label-always": "",
-            "label-auto": "",
-            "label-never": ""
+            "description-auto": "显示密度较低的点",
+            "label-always": "总是",
+            "label-auto": "自动",
+            "label-never": "绝不"
           },
           "stacking": {
-            "label-100": "",
-            "label-normal": "",
-            "label-off": ""
+            "label-100": "100％",
+            "label-normal": "普通的",
+            "label-off": "离开"
           },
           "thresholds-display-mode": {
-            "label-dashed-lines": "",
-            "label-filled-regions": "",
-            "label-filled-regions-and-dashed-lines": "",
-            "label-filled-regions-and-lines": "",
-            "label-lines": "",
-            "label-off": ""
+            "label-dashed-lines": "作为线（虚线）",
+            "label-filled-regions": "作为填充的地区",
+            "label-filled-regions-and-dashed-lines": "作为填充的区域和线条（虚线）",
+            "label-filled-regions-and-lines": "作为填充的区域和线条",
+            "label-lines": "作为行",
+            "label-off": "离开"
           }
         }
       }
@@ -7808,73 +7814,73 @@
   },
   "heatmap": {
     "calculate-from-data-options": {
-      "label-no": "",
-      "label-yes": ""
+      "label-no": "不",
+      "label-yes": "是的"
     },
-    "category-cell-display": "",
-    "category-colors": "",
-    "category-exemplars": "",
-    "category-heatmap": "",
-    "category-legend": "",
-    "category-tooltip": "",
-    "category-y-axis": "",
+    "category-cell-display": "单元显示",
+    "category-colors": "颜色",
+    "category-exemplars": "典范",
+    "category-heatmap": "热图",
+    "category-legend": "图例",
+    "category-tooltip": "工具提示",
+    "category-y-axis": "y轴",
     "mode-options": {
-      "label-opacity": "",
-      "label-scheme": ""
+      "label-opacity": "不透明度",
+      "label-scheme": "方案"
     },
-    "name-axis-label": "",
-    "name-axis-width": "",
-    "name-calculate-from-data": "",
-    "name-cell-gap": "",
-    "name-color": "",
-    "name-decimals": "",
-    "name-end-color-at-value": "",
-    "name-exponent": "",
-    "name-hide-cells-gt": "",
-    "name-hide-cells-lt": "",
-    "name-max-height": "",
-    "name-max-value": "",
-    "name-max-width": "",
-    "name-min-value": "",
-    "name-mode": "",
-    "name-placement": "",
-    "name-reverse": "",
-    "name-scale": "",
-    "name-scheme": "",
-    "name-show-color-scale": "",
+    "name-axis-label": "轴标签",
+    "name-axis-width": "轴宽度",
+    "name-calculate-from-data": "从数据计算",
+    "name-cell-gap": "细胞间隙",
+    "name-color": "颜色",
+    "name-decimals": "小数",
+    "name-end-color-at-value": "最终颜色尺度",
+    "name-exponent": "指数",
+    "name-hide-cells-gt": "隐藏具有值> =的单元格",
+    "name-hide-cells-lt": "隐藏值<=的单元格",
+    "name-max-height": "最大高度",
+    "name-max-value": "最大值",
+    "name-max-width": "最大宽度",
+    "name-min-value": "最小值",
+    "name-mode": "模式",
+    "name-placement": "放置",
+    "name-reverse": "撤销",
+    "name-scale": "规模",
+    "name-scheme": "方案",
+    "name-show-color-scale": "显示色标",
     "name-show-histogram": "",
     "name-show-legend": "",
     "name-start-color-from-value": "",
-    "name-steps": "",
-    "name-tick-alignment": "",
-    "name-tooltip-mode": "",
-    "name-unit": "",
-    "name-value-name": "",
-    "name-y-axis-scale": "",
-    "placeholder-axis-label": "",
-    "placeholder-axis-width": "",
-    "placeholder-decimals": "",
-    "placeholder-end-color-at-value": "",
-    "placeholder-hide-cells-gt": "",
-    "placeholder-hide-cells-lt": "",
-    "placeholder-max-value": "",
-    "placeholder-min-value": "",
+    "name-steps": "步骤",
+    "name-tick-alignment": "刻度对齐",
+    "name-tooltip-mode": "工具提示模式",
+    "name-unit": "单元",
+    "name-value-name": "价值名称",
+    "name-y-axis-scale": "Y轴刻度",
+    "placeholder-axis-label": "自动",
+    "placeholder-axis-width": "自动",
+    "placeholder-decimals": "自动",
+    "placeholder-end-color-at-value": "自动（最大）",
+    "placeholder-hide-cells-gt": "没有任何",
+    "placeholder-hide-cells-lt": "没有任何",
+    "placeholder-max-value": "自动",
+    "placeholder-min-value": "自动",
     "placeholder-start-color-from-value": "",
-    "placeholder-value-name": "",
+    "placeholder-value-name": "价值",
     "placement-options": {
-      "label-hidden": "",
-      "label-left": "",
-      "label-right": ""
+      "label-hidden": "隐",
+      "label-left": "左边",
+      "label-right": "正确的"
     },
     "scale-options": {
-      "label-exponential": "",
-      "label-linear": ""
+      "label-exponential": "指数",
+      "label-linear": "线性"
     },
     "tick-alignment-options": {
-      "label-auto": "",
-      "label-bottom": "",
-      "label-middle": "",
-      "label-top": ""
+      "label-auto": "自动",
+      "label-bottom": "底部（GE）",
+      "label-middle": "中间",
+      "label-top": "顶（LE）"
     },
     "tooltip-mode-options": {
       "label-all": "",
@@ -7939,14 +7945,14 @@
     "troubleshooting-help": "要请求故障排除帮助，请将此面板的快照发送给 Grafana Labs 技术支持。快照包含查询响应数据和面板设置。"
   },
   "histogram": {
-    "category-histogram": "",
+    "category-histogram": "直方图",
     "histogram-panel": {
       "no-histogram-found-in-response": "回复中未找到直方图"
     },
-    "name-fill-opacity": "",
-    "name-gradient-mode": "",
-    "name-line-width": "",
-    "name-stacking": ""
+    "name-fill-opacity": "填充不透明度",
+    "name-gradient-mode": "梯度模式",
+    "name-line-width": "线宽",
+    "name-stacking": "堆叠"
   },
   "inspector": {
     "inspect-data-tab": {
@@ -7971,10 +7977,10 @@
       "refresh": "刷新"
     },
     "query-inspector": {
-      "query-inspector": "查询检查器",
-      "text-loading-query-inspector": "正在加载查询检查器...",
       "count-frames_other": "{{count}} 帧",
-      "count-rows_other": "{{count}} 行"
+      "count-rows_other": "{{count}} 行",
+      "query-inspector": "查询检查器",
+      "text-loading-query-inspector": "正在加载查询检查器..."
     }
   },
   "invites": {
@@ -8136,17 +8142,17 @@
       "description": "您的 LDAP 配置无效，因为基本登录表单当前已禁用。请启用登录表单以使用 LDAP 身份验证。您可以在“身份验证”页面上的“身份验证设置”下启用此选项。",
       "title": "基本登录已禁用"
     },
-    "search_filter": {
-      "description": "LDAP 搜索筛选器用于在目录中定位特定条目。",
-      "error": "搜索筛选器是必填字段",
-      "label": "搜索筛选器",
-      "placeholder": "示例：cn=%s"
-    },
     "search-base-dns": {
       "description": "要搜索的基本专有名称数组。",
       "error": "搜索基本专有名称是必填字段",
       "label": "搜索基本专有名称",
       "placeholder": "示例：dc=grafana,dc=org"
+    },
+    "search_filter": {
+      "description": "LDAP 搜索筛选器用于在目录中定位特定条目。",
+      "error": "搜索筛选器是必填字段",
+      "label": "搜索筛选器",
+      "placeholder": "示例：cn=%s"
     },
     "subtitle": "Grafana 中的 LDAP 集成允许您的 Grafana 用户使用其 LDAP 凭据登录。不妨在我们的<2><0>文档</0></2>中了解更多信息。",
     "title": "基本设置"
@@ -8201,14 +8207,14 @@
     },
     "loading-panel-text": "正在加载库面板",
     "modal": {
+      "body_other": "此面板在 {{count}} 个仪表板中使用。请选择要在哪个仪表板中查看此面板：",
       "button-cancel": "取消",
       "button-view-panel1": "在 {{label}} 中查看面板...",
       "button-view-panel2": "在仪表板中查看面板...",
       "panel-not-linked": "面板没有链接到仪表板。请将面板添加到仪表板，然后重试。",
       "select-no-options-message": "未找到仪表板",
       "select-placeholder": "开始输入以搜索仪表板",
-      "title": "在仪表板中查看面板",
-      "body_other": "此面板在 {{count}} 个仪表板中使用。请选择要在哪个仪表板中查看此面板："
+      "title": "在仪表板中查看面板"
     },
     "panel-library-options-group": {
       "create-new-library-panel": "创建新的库面板"
@@ -8223,9 +8229,9 @@
       "dashboard-name": "数据面板名称",
       "discard": "丢弃",
       "loading-connected-dashboards": "正在加载已关联的数据面板...",
+      "num-affected_other": "此更新将影响 <1>{{count}} 个数据面板。</1>",
       "placeholder-search-affected-dashboards": "搜索受影响的数据面板",
-      "update-all": "全部更新",
-      "num-affected_other": "此更新将影响 <1>{{count}} 个数据面板。</1>"
+      "update-all": "全部更新"
     }
   },
   "link": {
@@ -8320,19 +8326,19 @@
     }
   },
   "logs": {
-    "category-logs": "",
+    "category-logs": "日志",
     "deduplication-options": {
-      "label-exact": "",
-      "label-none": "",
-      "label-numbers": "",
-      "label-signature": ""
+      "label-exact": "精确的",
+      "label-none": "没有任何",
+      "label-numbers": "数字",
+      "label-signature": "签名"
     },
-    "description-enable-infinite-scrolling": "",
-    "description-enable-syntax-highlighting": "",
-    "description-show-controls": "",
+    "description-enable-infinite-scrolling": "实验。\n通过滚动到日志列表的底部，请求更多结果。",
+    "description-enable-syntax-highlighting": "使用预定义的语法着色语法来突出日志线的相关部分",
+    "description-show-controls": "显示控件跳到最后一个或第一个日志线，然后按日志级别过滤",
     "font-size-options": {
-      "label-default": "",
-      "label-small": ""
+      "label-default": "默认",
+      "label-small": "小的"
     },
     "get-dataframe-fields": {
       "vars": {
@@ -8390,12 +8396,12 @@
       "unpin-from-outline": "取消固定日志"
     },
     "log-list-search": {
-      "close": "",
-      "filter": "",
-      "info": "",
-      "input-placeholder": "",
-      "next": "",
-      "prev": ""
+      "close": "关闭搜索",
+      "filter": "过滤器匹配日志",
+      "info": "客户端搜索显示的日志中的字符串。\n不要与查询过滤器混淆。\n使用此组件在日志结果中搜索特定字符串。",
+      "input-placeholder": "在日志中搜索",
+      "next": "下一个结果",
+      "prev": "先前的结果"
     },
     "log-row-context-modal": {
       "error-loading-log-more-logs": "加载更多日志时出错。",
@@ -8450,7 +8456,7 @@
       "escape-newlines": "修复日志行中错误转义的换行和制表符序列",
       "font-size-default": "使用小字号",
       "font-size-small": "使用默认字号",
-      "hide-search": "",
+      "hide-search": "关闭搜索",
       "hide-timestamps": "隐藏时间戳",
       "hide-unique-labels": "隐藏唯一标签",
       "newest-first": "先显示最新日志 - 点击以先显示最旧日志",
@@ -8459,7 +8465,7 @@
       "remove-escaping": "移除转义",
       "scroll-bottom": "滚动到底部",
       "scroll-top": "滚动到顶部",
-      "show-search": "",
+      "show-search": "在日志结果中搜索",
       "show-timestamps": "显示时间戳",
       "show-unique-labels": "显示唯一标签",
       "unwrap-lines": "取消多行显示",
@@ -8477,21 +8483,21 @@
         "common-labels": "常用标签："
       }
     },
-    "name-common-labels": "",
-    "name-deduplication": "",
-    "name-enable-infinite-scrolling": "",
-    "name-enable-log-details": "",
-    "name-enable-syntax-highlighting": "",
-    "name-font-size": "",
-    "name-order": "",
-    "name-prettify-json": "",
-    "name-show-controls": "",
-    "name-time": "",
-    "name-unique-labels": "",
-    "name-wrap-lines": "",
+    "name-common-labels": "常见标签",
+    "name-deduplication": "重复数据删除",
+    "name-enable-infinite-scrolling": "启用无限滚动",
+    "name-enable-log-details": "启用日志详细信息",
+    "name-enable-syntax-highlighting": "启用语法突出显示",
+    "name-font-size": "字体大小",
+    "name-order": "命令",
+    "name-prettify-json": "Prettify Json",
+    "name-show-controls": "显示控件",
+    "name-time": "时间",
+    "name-unique-labels": "独特的标签",
+    "name-wrap-lines": "包裹线",
     "order-options": {
-      "label-newest-first": "",
-      "label-oldest-first": ""
+      "label-newest-first": "最新的第一",
+      "label-oldest-first": "最古老的第一"
     },
     "out-of-range-message": {
       "end-of-the-selected-time-range": "所选时间范围的结束。"
@@ -8525,27 +8531,27 @@
     }
   },
   "logs-new": {
-    "category-logs": "",
+    "category-logs": "日志",
     "deduplication-options": {
-      "label-exact": "",
-      "label-none": "",
-      "label-numbers": "",
-      "label-signature": ""
+      "label-exact": "精确的",
+      "label-none": "没有任何",
+      "label-numbers": "数字",
+      "label-signature": "签名"
     },
-    "description-infinite-scrolling": "",
-    "description-show-controls": "",
+    "description-infinite-scrolling": "实验。\n通过滚动到日志列表的底部，请求更多结果。",
+    "description-show-controls": "显示控件跳到最后一个或第一个日志线，然后按日志级别过滤",
     "description-syntax-highlighting": "",
     "name-deduplication": "",
-    "name-enable-log-details": "",
-    "name-infinite-scrolling": "",
-    "name-order": "",
-    "name-show-controls": "",
-    "name-syntax-highlighting": "",
-    "name-time": "",
-    "name-wrap-lines": "",
+    "name-enable-log-details": "启用日志详细信息",
+    "name-infinite-scrolling": "启用无限滚动",
+    "name-order": "命令",
+    "name-show-controls": "显示控件",
+    "name-syntax-highlighting": "启用语法突出显示",
+    "name-time": "时间",
+    "name-wrap-lines": "包裹线",
     "order-options": {
-      "label-newest-first": "",
-      "label-oldest-first": ""
+      "label-newest-first": "最新的第一",
+      "label-oldest-first": "最古老的第一"
     }
   },
   "manage-dashbaords": {
@@ -8977,7 +8983,7 @@
       "title": "检测"
     },
     "drilldown": {
-      "title": "Drilldown"
+      "title": "下钻"
     },
     "explore": {
       "title": "探索"
@@ -9230,11 +9236,11 @@
     "rss-button": "最新博客"
   },
   "news": {
-    "category-news": "",
-    "description-show-image": "",
+    "category-news": "消息",
+    "description-show-image": "控制新闻项目的社交项目（OG：Image）图像如上所示",
     "description-url": "",
     "link-title": "前往 Grafana Labs 博客",
-    "name-show-image": "",
+    "name-show-image": "显示图像",
     "name-url": "",
     "news-panel": {
       "body-error-loading-rss-feed": "请确保订阅源网址正确无误，并且在服务器上正确配置了 CORS。请参阅<2>新闻面板文档</2>。",
@@ -9246,25 +9252,25 @@
   "node-graph": {
     "category-edges": "",
     "category-node-graph": "",
-    "category-nodes": "",
+    "category-nodes": "节点",
     "layout-algorithm-options": {
-      "description-force": "",
-      "description-grid": "",
-      "description-layered": "",
-      "label-force": "",
-      "label-grid": "",
-      "label-layered": ""
+      "description-force": "使用实力定向的布局",
+      "description-grid": "使用网格布局",
+      "description-layered": "使用分层布局",
+      "label-force": "力量",
+      "label-grid": "网格",
+      "label-layered": "分层"
     },
     "name-arc-sections": "",
     "name-layout-algorithm": "",
     "name-main-stat-unit": "",
-    "name-secondary-stat-unit": "",
-    "name-zoom-mode": "",
+    "name-secondary-stat-unit": "次要统计单元",
+    "name-zoom-mode": "缩放模式",
     "zoom-mode-options": {
-      "description-cooperative": "",
-      "description-greedy": "",
-      "label-cooperative": "",
-      "label-greedy": ""
+      "description-cooperative": "让您正常滚动页面",
+      "description-greedy": "对所有变焦手势做出反应",
+      "label-cooperative": "合作",
+      "label-greedy": "贪婪的"
     }
   },
   "nodeGraph": {
@@ -9290,8 +9296,8 @@
       "aria-label-layered-layout-performance-warning": "分层布局性能警告",
       "aria-label-nodes-hidden-warning": "节点隐藏警告",
       "computing-layout": "计算布局",
-      "no-data": "没有数据",
       "hidden-nodes_other": "<0></0>出于性能原因，{{count}} 个节点已隐藏。",
+      "no-data": "没有数据",
       "processed-nodes_other": "<0></0> 带有 {{count}} 个节点的分层布局可能较慢。"
     },
     "node-graph-panel": {
@@ -9340,40 +9346,40 @@
     },
     "registry": {
       "get-all-option-editors": {
-        "description-time-zone": "",
-        "name-time-zone": ""
+        "description-time-zone": "时区选择",
+        "name-time-zone": "时区"
       },
       "standard-field-condigs": {
-        "category-data-links": ""
+        "category-data-links": "数据链接和动作"
       },
       "standard-field-configs": {
-        "category": "",
-        "category-thresholds": "",
-        "category-value-mappings": "",
-        "description-display-name": "",
-        "description-field-min-max": "",
-        "description-max": "",
-        "description-min": "",
-        "description-no-value": "",
-        "description-value-mappings": "",
-        "name-actions": "",
-        "name-ad-hoc": "",
-        "name-color-scheme": "",
-        "name-data-links": "",
-        "name-decimals": "",
-        "name-display-name": "",
-        "name-field-min-max": "",
-        "name-max": "",
-        "name-min": "",
-        "name-no-value": "",
-        "name-thresholds": "",
-        "name-unit": "",
-        "name-value-mappings": "",
-        "placeholder-decimals": "",
-        "placeholder-display-name": "",
-        "placeholder-max": "",
-        "placeholder-min": "",
-        "placeholder-unit": ""
+        "category": "标准选项",
+        "category-thresholds": "阈值",
+        "category-value-mappings": "价值映射",
+        "description-display-name": "更改字段或系列名称",
+        "description-field-min-max": "计算每个场的最低最大值",
+        "description-max": "放空以根据所有值计算",
+        "description-min": "放空以根据所有值计算",
+        "description-no-value": "没有价值的时候显示什么",
+        "description-value-mappings": "根据输入值修改显示文本",
+        "name-actions": "动作",
+        "name-ad-hoc": "临时过滤",
+        "name-color-scheme": "配色方案",
+        "name-data-links": "数据链接",
+        "name-decimals": "小数",
+        "name-display-name": "显示名称",
+        "name-field-min-max": "田间最小/最大",
+        "name-max": "最大限度",
+        "name-min": "最小",
+        "name-no-value": "没有价值",
+        "name-thresholds": "阈值",
+        "name-unit": "单元",
+        "name-value-mappings": "价值映射",
+        "placeholder-decimals": "自动",
+        "placeholder-display-name": "没有任何",
+        "placeholder-max": "自动",
+        "placeholder-min": "自动",
+        "placeholder-unit": "没有任何"
       }
     },
     "units": {
@@ -9481,13 +9487,13 @@
     },
     "panel-data-error-view": {
       "missing-value": {
-        "number": "",
-        "string": "",
-        "time": "",
-        "unknown": ""
+        "number": "数据缺少一个数字字段",
+        "string": "数据缺少字符串字段",
+        "time": "数据缺少时间字段",
+        "unknown": "无法可视化数据"
       },
       "no-value": {
-        "default": ""
+        "default": "没有数据"
       },
       "open-visualization-suggestions": "打开可视化建议",
       "switch-to-table": "切换至表格"
@@ -9527,25 +9533,25 @@
     "select-placeholder": "按类型筛选"
   },
   "piechart": {
-    "category-legend": "",
-    "category-pie-chart": "",
-    "description-labels": "",
-    "description-pie-chart-type": "",
+    "category-legend": "图例",
+    "category-pie-chart": "饼图",
+    "description-labels": "选择要在饼图中显示的标签",
+    "description-pie-chart-type": "应如何渲染饼图",
     "labels-options": {
-      "label-name": "",
-      "label-percent": "",
-      "label-value": ""
+      "label-name": "姓名",
+      "label-percent": "百分比",
+      "label-value": "价值"
     },
     "legend-values-options": {
-      "label-percent": "",
-      "label-value": ""
+      "label-percent": "百分比",
+      "label-value": "价值"
     },
     "name-labels": "",
     "name-legend-values": "",
-    "name-pie-chart-type": "",
+    "name-pie-chart-type": "饼图类型",
     "pie-chart-type-options": {
-      "label-donut": "",
-      "label-pie": ""
+      "label-donut": "油炸圈饼",
+      "label-pie": "馅饼"
     }
   },
   "playlist": {
@@ -9713,7 +9719,7 @@
         "dependencies": "依赖关系",
         "documentation": "文档",
         "downloads": "下载",
-        "from": "",
+        "from": "从",
         "installedVersion": "安装的版本",
         "lastCommitDate": "上次提交日期：",
         "latestReleaseDate": "最新发布日期：",
@@ -9775,7 +9781,7 @@
     },
     "install-controls-warning": {
       "body-not-published": "此插件未发布到 <2>grafana.com/plugins</2>，无法通过目录管理。",
-      "enterprise-plugin-info": "",
+      "enterprise-plugin-info": "该插件仅在Grafana Cloud和Grafana Enterprise中可用。",
       "learn-more": "了解更多",
       "no-valid-grafana-enterprise-license-detected": "未检测到有效的 Grafana 企业版许可证。",
       "title-dev-alert": "这是插件的开发版本，无法卸载。",
@@ -9933,13 +9939,13 @@
   },
   "provisioned-resource-form": {
     "save-or-delete-resource-shared-fields": {
-      "comment-placeholder-describe-changes-optional": "",
-      "description-branch-name-in-git-hub": "",
+      "comment-placeholder-describe-changes-optional": "添加注释以描述您的更改（可选）",
+      "description-branch-name-in-git-hub": "github中的分支名称",
       "description-inside-repository": "",
-      "label-branch": "",
-      "label-comment": "",
-      "label-path": "",
-      "label-workflow": ""
+      "label-branch": "分支",
+      "label-comment": "评论",
+      "label-path": "小路",
+      "label-workflow": "工作流程"
     }
   },
   "provisioning": {
@@ -9951,11 +9957,11 @@
       "empty": "空",
       "error-field-required": "此字段是必填字段。",
       "ext-storage": "外部存储",
+      "files-count_other": "{{count}} 个文件",
       "grafana": "Grafana 实例",
       "label-display-name": "显示名称",
       "placeholder-my-repository-connection": "我的存储库连接",
-      "text-loading-resource-information": "正在加载资源信息...",
-      "files-count_other": "{{count}} 个文件"
+      "text-loading-resource-information": "正在加载资源信息..."
     },
     "check-repository": {
       "check": "检查"
@@ -10530,10 +10536,10 @@
       "title-data-source-help": "数据源帮助"
     },
     "query-group-options-editor": {
+      "Query options-title-query-options": "查询选项",
       "collapsed-interval": "间隔 = {{intervalDesc}}",
       "collapsed-max-data-points": "MD = {{mdDesc}}",
       "hide-time-info": "隐藏时间信息",
-      "Query options-title-query-options": "查询选项",
       "relative-time": "相对时间",
       "relative-time-tooltip": "覆盖单个面板的相对时间范围，这会导致它们与数据面板右上角的数据面板时间选择器中选择的时间范围不同。例如，要配置最近 5 分钟，相对时间应为 <1>{{relativeFrom}}</1> 和 <4>{{relativeTo}}</4>，或者像 <6>{{variable}}</6> 这样的变量。",
       "render-cache-timeout-option": {
@@ -10591,15 +10597,15 @@
       "confirm-text": "删除",
       "delete-button": "删除",
       "delete-loading": "正在删除...",
-      "title": "永久删除数据面板",
-      "text_other": "此操作将删除 {{numberOfDashboards}} 个数据面板。"
+      "text_other": "此操作将删除 {{numberOfDashboards}} 个数据面板。",
+      "title": "永久删除数据面板"
     },
     "restore-modal": {
+      "folder-picker-text_other": "请选择一个文件夹，以还原数据面板。",
       "restore-button": "还原",
       "restore-loading": "正在还原...",
-      "title": "还原数据面板",
-      "folder-picker-text_other": "请选择一个文件夹，以还原数据面板。",
-      "text_other": "此操作将还原 {{numberOfDashboards}} 个数据面板。"
+      "text_other": "此操作将还原 {{numberOfDashboards}} 个数据面板。",
+      "title": "还原数据面板"
     }
   },
   "recentlyDeleted": {
@@ -11173,11 +11179,11 @@
   },
   "stat": {
     "add-orientation-option": {
-      "description-orientation": "",
-      "name-orientation": "",
+      "description-orientation": "布局方向",
+      "name-orientation": "方向",
       "orientation-options": {
-        "label-auto": "",
-        "label-horizontal": "",
+        "label-auto": "自动",
+        "label-horizontal": "水平的",
         "label-vertical": ""
       }
     },
@@ -11186,52 +11192,52 @@
       "description-calculation": "",
       "description-fields": "",
       "description-limit": "",
-      "description-show": "",
+      "description-show": "计算每个列或系列的单个值或显示每一行",
       "fields-options": {
-        "label-all-fields": "",
-        "label-numeric-fields": ""
+        "label-all-fields": "所有字段",
+        "label-numeric-fields": "数字字段"
       },
-      "name-calculation": "",
-      "name-fields": "",
-      "name-limit": "",
-      "name-show": "",
+      "name-calculation": "计算",
+      "name-fields": "字段",
+      "name-limit": "限制",
+      "name-show": "展示",
       "show-options": {
-        "label-all-values": "",
-        "label-calculate": ""
+        "label-all-values": "所有值",
+        "label-calculate": "计算"
       }
     },
-    "category-stat-styles": "",
+    "category-stat-styles": "Stat样式",
     "color-mode-options": {
-      "label-background-gradient": "",
-      "label-background-solid": "",
+      "label-background-gradient": "背景梯度",
+      "label-background-solid": "背景固体",
       "label-none": "",
       "label-value": ""
     },
     "description-graph-mode": "",
-    "description-text-mode": "",
+    "description-text-mode": "控制姓名和值是否显示或只是名称",
     "graph-mode": {
       "options": {
-        "label-area": "",
-        "label-none": ""
+        "label-area": "区域",
+        "label-none": "没有任何"
       }
     },
     "name-color-modcolor-mode-options": {
-      "label": ""
+      "label": "颜色模式"
     },
-    "name-graph-mode": "",
-    "name-show-percent-change": "",
-    "name-text-alignment": "",
-    "name-text-mode": "",
-    "name-wide-layout": "",
-    "percent-change-color-mode": "",
+    "name-graph-mode": "图模式",
+    "name-show-percent-change": "显示百分比变化",
+    "name-text-alignment": "文字对齐",
+    "name-text-mode": "文本模式",
+    "name-wide-layout": "宽布局",
+    "percent-change-color-mode": "百分比更改颜色模式",
     "percent-change-color-mode-options": {
-      "label-inverted": "",
-      "label-same-as-value": "",
-      "label-standard": ""
+      "label-inverted": "倒",
+      "label-same-as-value": "与价值相同",
+      "label-standard": "标准"
     },
     "text-alignment-options": {
-      "label-auto": "",
-      "label-center": ""
+      "label-auto": "自动",
+      "label-center": "中心"
     },
     "text-mode-options": {
       "label-auto": "",
@@ -11241,44 +11247,44 @@
       "label-value-and-name": ""
     },
     "wide-layout-options": {
-      "label-off": "",
-      "label-on": ""
+      "label-off": "离开",
+      "label-on": "在"
     }
   },
   "state-timeline": {
     "align-values-options": {
-      "label-center": "",
-      "label-left": "",
-      "label-right": ""
+      "label-center": "中心",
+      "label-left": "左边",
+      "label-right": "正确的"
     },
-    "category-state-timeline": "",
-    "name-align-values": "",
-    "name-connect-null-values": "",
-    "name-disconnect-values": "",
-    "name-fill-opacity": "",
-    "name-line-width": "",
-    "name-merge-equal-consecutive-values": "",
-    "name-page-size": "",
-    "name-row-height": "",
-    "name-show-values": "",
+    "category-state-timeline": "状态时间表",
+    "name-align-values": "对齐值",
+    "name-connect-null-values": "连接空值",
+    "name-disconnect-values": "断开值",
+    "name-fill-opacity": "填充不透明度",
+    "name-line-width": "线宽",
+    "name-merge-equal-consecutive-values": "合并相等的连续值",
+    "name-page-size": "页面大小（启用分页）",
+    "name-row-height": "行高度",
+    "name-show-values": "显示值",
     "show-values-options": {
-      "label-always": "",
-      "label-auto": "",
-      "label-never": ""
+      "label-always": "总是",
+      "label-auto": "自动",
+      "label-never": "绝不"
     }
   },
   "status-history": {
-    "category-status-history": "",
-    "name-column-width": "",
-    "name-fill-opacity": "",
-    "name-line-width": "",
-    "name-page-size": "",
-    "name-row-height": "",
-    "name-show-values": "",
+    "category-status-history": "状态历史",
+    "name-column-width": "列宽",
+    "name-fill-opacity": "填充不透明度",
+    "name-line-width": "线宽",
+    "name-page-size": "页面大小（启用分页）",
+    "name-row-height": "行高度",
+    "name-show-values": "显示值",
     "show-values-options": {
-      "label-always": "",
-      "label-auto": "",
-      "label-never": ""
+      "label-always": "总是",
+      "label-auto": "自动",
+      "label-never": "绝不"
     },
     "status-history-panel": {
       "too-many-points_other": "数据点过多，无法正常可视化。<1></1>请更新查询以返回更少的数据点。<3></3>（已接收 {{count}} 个数据点）"
@@ -11317,12 +11323,12 @@
       "label-gauge-display-mode": "仪表显示模式",
       "label-value-display": "值显示"
     },
-    "category-cell-options": "",
-    "category-table": "",
-    "category-table-footer": "",
+    "category-cell-options": "单元选项",
+    "category-table": "表格",
+    "category-table-footer": "表格页脚",
     "cell-height-options": {
       "label-large": "",
-      "label-medium": "",
+      "label-medium": "中等的",
       "label-small": ""
     },
     "color-background-cell-options-editor": {
@@ -11337,82 +11343,82 @@
       "wrap-text": "文本换行"
     },
     "column-alignment-options": {
-      "label-auto": "",
-      "label-center": "",
-      "label-left": "",
-      "label-right": ""
+      "label-auto": "自动",
+      "label-center": "居中",
+      "label-left": "左侧",
+      "label-right": "右侧"
     },
     "container": {
       "content": "在单个表中显示太多列可能会影响性能，并使数据难以阅读。请考虑优化您的查询。",
       "show-all-series": "显示所有列",
       "show-only-series": "仅显示 {{MAX_NUMBER_OF_COLUMNS}} 列"
     },
-    "description-calculation": "",
-    "description-cell-value-inspect": "",
-    "description-column-filter": "",
-    "description-count-rows": "",
-    "description-fields": "",
-    "description-min-column-width": "",
+    "description-calculation": "选择一个还原功能 /计算",
+    "description-cell-value-inspect": "在模态窗口中启用单元格值检查",
+    "description-column-filter": "在表中启用/禁用字段过滤器",
+    "description-count-rows": "显示所有数据行的一个计数",
+    "description-fields": "选择应计算的字段",
+    "description-min-column-width": "列自动调整的最小宽度",
     "image-cell-options-editor": {
       "description-alt-text": "在图片无法显示或用户使用屏幕阅读器时，将显示的替代文本",
       "description-title-text": "光标悬停在图片上时将显示的文本",
       "label-alt-text": "替代文本",
       "label-title-text": "标题文本"
     },
-    "name-calculation": "",
-    "name-cell-height": "",
-    "name-cell-type": "",
-    "name-cell-value-inspect": "",
-    "name-column-alignment": "",
-    "name-column-filter": "",
-    "name-column-width": "",
-    "name-count-rows": "",
-    "name-enable-paginations": "",
-    "name-fields": "",
-    "name-hide-in-table": "",
-    "name-min-column-width": "",
-    "name-show-table-footer": "",
-    "name-show-table-header": "",
-    "placeholder-column-width": "",
-    "placeholder-fields": ""
+    "name-calculation": "计算",
+    "name-cell-height": "细胞高度",
+    "name-cell-type": "细胞类型",
+    "name-cell-value-inspect": "单元格值检查",
+    "name-column-alignment": "列对齐",
+    "name-column-filter": "列过滤器",
+    "name-column-width": "列宽",
+    "name-count-rows": "计数行",
+    "name-enable-paginations": "启用分页",
+    "name-fields": "字段",
+    "name-hide-in-table": "隐藏在表格中",
+    "name-min-column-width": "最小柱宽度",
+    "name-show-table-footer": "展示台页脚",
+    "name-show-table-header": "展示表标头",
+    "placeholder-column-width": "自动",
+    "placeholder-fields": "所有数字字段"
   },
   "table-new": {
-    "category-cell-options": "",
-    "category-table": "",
-    "category-table-footer": "",
+    "category-cell-options": "单元选项",
+    "category-table": "表格",
+    "category-table-footer": "表格页脚",
     "cell-height-options": {
-      "label-large": "",
-      "label-medium": "",
-      "label-small": ""
+      "label-large": "大的",
+      "label-medium": "中等的",
+      "label-small": "小的"
     },
     "column-alignment-options": {
-      "label-auto": "",
-      "label-center": "",
-      "label-left": "",
-      "label-right": ""
+      "label-auto": "自动",
+      "label-center": "中心",
+      "label-left": "左侧",
+      "label-right": "右侧"
     },
-    "description-calculation": "",
-    "description-cell-value-inspect": "",
-    "description-column-filter": "",
-    "description-count-rows": "",
-    "description-fields": "",
-    "description-min-column-width": "",
-    "name-calculation": "",
-    "name-cell-height": "",
-    "name-cell-type": "",
-    "name-cell-value-inspect": "",
-    "name-column-alignment": "",
-    "name-column-filter": "",
+    "description-calculation": "选择一个聚合函数或者计算函数",
+    "description-cell-value-inspect": "单元格值检验",
+    "description-column-filter": "在表中启用/禁用字段过滤器",
+    "description-count-rows": "显示所有数据行的一个计数",
+    "description-fields": "选择应计算的字段",
+    "description-min-column-width": "列自动调整的最小宽度",
+    "name-calculation": "计算",
+    "name-cell-height": "细胞高度",
+    "name-cell-type": "细胞类型",
+    "name-cell-value-inspect": "单元格值检查",
+    "name-column-alignment": "列对齐",
+    "name-column-filter": "列过滤器",
     "name-column-width": "",
-    "name-count-rows": "",
-    "name-enable-pagination": "",
-    "name-fields": "",
-    "name-hide-in-table": "",
-    "name-min-column-width": "",
-    "name-show-table-footer": "",
-    "name-show-table-header": "",
-    "placeholder-column-width": "",
-    "placeholder-fields": ""
+    "name-count-rows": "计数行",
+    "name-enable-pagination": "启用分页",
+    "name-fields": "字段",
+    "name-hide-in-table": "隐藏在表格中",
+    "name-min-column-width": "最小柱宽度",
+    "name-show-table-footer": "展示台页脚",
+    "name-show-table-header": "展示表标头",
+    "placeholder-column-width": "自动",
+    "placeholder-fields": "所有数字字段"
   },
   "tag-filter": {
     "clear-button": "清除标记",
@@ -11496,14 +11502,14 @@
     }
   },
   "text": {
-    "category-text": "",
+    "category-text": "文本",
     "mode-options": {
-      "label-code": "",
-      "label-html": "",
-      "label-markdown": ""
+      "label-code": "代码",
+      "label-html": "html",
+      "label-markdown": "降价"
     },
-    "name-content": "",
-    "name-language": "",
+    "name-content": "内容",
+    "name-language": "语言",
     "name-mode": "",
     "name-show-line-numbers": "",
     "name-show-mini-map": ""
@@ -11604,54 +11610,54 @@
       "tooltip-delete": "删除",
       "tooltip-edit": "编辑"
     },
-    "category-axis": "",
+    "category-axis": "轴",
     "config": {
       "get-graph-field-config": {
-        "aria-label-bar-width-factor": "",
-        "aria-label-fill-opacity": "",
-        "aria-label-line-width": "",
-        "aria-label-point-size": "",
-        "category-graph-styles": "",
-        "category-thresholds": "",
-        "name-bar-alignment": "",
-        "name-bar-width-factor": "",
-        "name-connect-nulls": "",
-        "name-disconnect-values": "",
-        "name-fill-below-to": "",
-        "name-fill-opacity": "",
-        "name-gradient-mode": "",
-        "name-line-interpolation": "",
-        "name-line-style": "",
-        "name-line-width": "",
-        "name-point-size": "",
-        "name-show-points": "",
-        "name-show-thresholds": "",
-        "name-style": "",
-        "name-transform": "",
+        "aria-label-bar-width-factor": "条宽因子",
+        "aria-label-fill-opacity": "填充不透明度",
+        "aria-label-line-width": "线宽",
+        "aria-label-point-size": "点大小",
+        "category-graph-styles": "图形样式",
+        "category-thresholds": "阈值",
+        "name-bar-alignment": "条对准",
+        "name-bar-width-factor": "条宽因子",
+        "name-connect-nulls": "连接空值",
+        "name-disconnect-values": "断开值",
+        "name-fill-below-to": "在下面填充",
+        "name-fill-opacity": "填充不透明度",
+        "name-gradient-mode": "梯度模式",
+        "name-line-interpolation": "线插值",
+        "name-line-style": "线样式",
+        "name-line-width": "线宽",
+        "name-point-size": "点大小",
+        "name-show-points": "显示点",
+        "name-show-thresholds": "显示阈值",
+        "name-style": "风格",
+        "name-transform": "转换",
         "transform-options": {
-          "description-constant": "",
-          "description-style": "",
-          "label-constant": "",
-          "label-style": ""
+          "description-constant": "第一个值将显示为恒定线",
+          "description-style": "将结果翻转为Y轴的负值",
+          "label-constant": "持续的",
+          "label-style": "负y"
         }
       }
     },
     "insert-nulls-editor": {
       "disconnect-options": {
-        "label-never": "",
-        "label-threshold": ""
+        "label-never": "绝不",
+        "label-threshold": "临界点"
       }
     },
     "line-style-editor": {
       "line-fill-options": {
-        "label-dash": "",
-        "label-dots": "",
-        "label-solid": ""
+        "label-dash": "短跑",
+        "label-dots": "点",
+        "label-solid": "坚硬的"
       },
       "title-the-input-expects-a-segment-list": "输入应为一个线段列表",
       "tooltip-help": "帮助"
     },
-    "name-time-zone": "",
+    "name-time-zone": "时区",
     "nulls-threshold-input": {
       "placeholder-never": "从不"
     },
@@ -11661,9 +11667,9 @@
     },
     "span-nulls-editor": {
       "gaps-options": {
-        "label-always": "",
-        "label-never": "",
-        "label-threshold": ""
+        "label-always": "总是",
+        "label-never": "绝不",
+        "label-threshold": "临界点"
       }
     },
     "timezones-editor": {
@@ -11672,17 +11678,17 @@
     }
   },
   "traces": {
-    "category-span-filters": "",
+    "category-span-filters": "跨度过滤器",
     "name-critical-path-only": "",
-    "name-find-in-trace": "",
+    "name-find-in-trace": "在痕迹中找到",
     "name-max-duration": "",
     "name-min-duration": "",
-    "name-service-name": "",
-    "name-service-name-operator": "",
-    "name-show-matches-only": "",
-    "name-span-name": "",
-    "name-span-name-operator": "",
-    "name-tags": "",
+    "name-service-name": "服务名称",
+    "name-service-name-operator": "服务名称操作员",
+    "name-show-matches-only": "仅显示比赛",
+    "name-span-name": "跨度名称",
+    "name-span-name-operator": "跨度名称操作员",
+    "name-tags": "标签",
     "traces-panel": {
       "no-data-found-in-response": "回复中未找到数据"
     }
@@ -11697,7 +11703,7 @@
     "axis-editor": {
       "log-mode-options": {
         "description": {
-          "split-the-buckets-based-on-size": ""
+          "split-the-buckets-based-on-size": "根据尺寸将水桶分开"
         },
         "label": {
           "split": ""
@@ -11705,12 +11711,12 @@
       },
       "mode-options": {
         "description": {
-          "split-the-buckets-based-on-count": "",
+          "split-the-buckets-based-on-count": "根据计数将存储桶分开",
           "split-the-buckets-based-on-size": ""
         },
         "label": {
-          "count": "",
-          "size": ""
+          "count": "数数",
+          "size": "尺寸"
         }
       },
       "placeholder-auto": "自动"
@@ -11730,9 +11736,9 @@
     },
     "calculate-heatmap": {
       "add-heatmap-calculation-options": {
-        "name-x-bucket": "",
-        "name-y-bucket": "",
-        "name-y-bucket-scale": ""
+        "name-x-bucket": "x桶",
+        "name-y-bucket": "是的",
+        "name-y-bucket-scale": "Y桶量表"
       }
     },
     "concatenate-transformer-editor": {
@@ -11776,8 +11782,8 @@
       "tooltip-enable": "启用"
     },
     "draggable-sort-order": {
-      "asc": "",
-      "desc": "",
+      "asc": "ASC",
+      "desc": "desc",
       "off": "关"
     },
     "enum-mapping-editor": {
@@ -11958,9 +11964,9 @@
       "time-in-ascending-order": "时间按升序排列"
     },
     "organize-fields-transformer-editor": {
-      "field-order": "",
+      "field-order": "现场顺序",
       "field-order-auto": "自动",
-      "field-order-manual": "",
+      "field-order-manual": "手动的",
       "first-frame-warning": "组织字段仅适用于单个帧。请考虑先应用连接转换或筛选输入。"
     },
     "partion-by-values-editor": {
@@ -11992,7 +11998,7 @@
     },
     "range-matcher-editor": {
       "and": "与",
-      "placeholder-from": "",
+      "placeholder-from": "从",
       "placeholder-to": "结束"
     },
     "reduce-row-options-editor": {
@@ -12121,10 +12127,10 @@
     }
   },
   "trend": {
-    "category-x-axis": "",
-    "description-x-field": "",
-    "name-x-field": "",
-    "placeholder-x-field": ""
+    "category-x-axis": "x轴",
+    "description-x-field": "数值的增加",
+    "name-x-field": "x字段",
+    "placeholder-x-field": "第一个数字值"
   },
   "upgrade-box": {
     "discovery-text": "您发现了一项专业功能！",
@@ -12330,8 +12336,8 @@
       "title-dependencies": "依赖关系"
     },
     "variables-unknown-button": {
-      "usage-title": "显示使用情况：{{variableId}}",
-      "VariablesUnknownButton-tooltip-show-usages": "显示使用情况"
+      "VariablesUnknownButton-tooltip-show-usages": "显示使用情况",
+      "usage-title": "显示使用情况：{{variableId}}"
     },
     "variables-unknown-table": {
       "collapse-label": "重命名或缺失的变量",
@@ -12351,20 +12357,20 @@
     }
   },
   "xychart": {
-    "category-xychart": "",
-    "name-fill-opacity": "",
-    "name-line-style": "",
-    "name-line-width": "",
-    "name-max-point-size": "",
-    "name-min-point-size": "",
-    "name-point-shape": "",
-    "name-point-size": "",
+    "category-xychart": "XY图表",
+    "name-fill-opacity": "填充不透明度",
+    "name-line-style": "线样式",
+    "name-line-width": "线宽",
+    "name-max-point-size": "最大点大小",
+    "name-min-point-size": "最小点大小",
+    "name-point-shape": "点形状",
+    "name-point-size": "点大小",
     "name-point-stroke-width": "",
-    "name-series-mapping": "",
-    "name-show": "",
+    "name-series-mapping": "系列映射",
+    "name-show": "展示",
     "point-shape-options": {
-      "label-circle": "",
-      "label-square": ""
+      "label-circle": "圆圈",
+      "label-square": "正方形"
     },
     "series-editor": {
       "add-series": "添加序列",
@@ -12376,18 +12382,18 @@
       "label-y-field": "Y 字段",
       "placeholder-all-frames": "所有帧",
       "placeholder-select-frame": "选定帧",
-      "placeholder-x-field": "",
-      "placeholder-y-field": "",
+      "placeholder-x-field": "每个帧中的第一个数字或时间字段",
+      "placeholder-y-field": "每个帧中的剩余数字字段",
       "tooltip-delete-series": "刪除序列"
     },
     "series-mapping-options": {
-      "label-auto": "",
-      "label-manual": ""
+      "label-auto": "自动",
+      "label-manual": "手动的"
     },
     "show-options": {
-      "label-both": "",
-      "label-lines": "",
-      "label-points": ""
+      "label-both": "两个都",
+      "label-lines": "线",
+      "label-points": "点"
     }
   }
 }
