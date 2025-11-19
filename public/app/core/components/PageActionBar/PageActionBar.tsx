@@ -1,9 +1,11 @@
 import { PureComponent } from 'react';
 
 import { SelectableValue } from '@grafana/data';
+import {   t } from '@grafana/i18n';
 import { LinkButton, FilterInput, InlineField } from '@grafana/ui';
 
 import { SortPicker } from '../Select/SortPicker';
+
 
 export interface Props {
   searchQuery: string;
@@ -25,7 +27,7 @@ export default class PageActionBar extends PureComponent<Props> {
       linkButton,
       setSearchQuery,
       target,
-      placeholder = 'Search by name or type',
+      placeholder,
       sortPicker,
     } = this.props;
     const linkProps: Parameters<typeof LinkButton>[0] = { href: linkButton?.href, disabled: linkButton?.disabled };
@@ -37,7 +39,7 @@ export default class PageActionBar extends PureComponent<Props> {
     return (
       <div className="page-action-bar">
         <InlineField grow>
-          <FilterInput value={searchQuery} onChange={setSearchQuery} placeholder={placeholder} />
+          <FilterInput value={searchQuery} onChange={setSearchQuery} placeholder={placeholder||t('alerting.contact-points-filter.label-search-by-name-or-type', 'Search by name or type')} />
         </InlineField>
         {sortPicker && (
           <SortPicker

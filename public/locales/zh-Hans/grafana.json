@@ -7318,6 +7318,13 @@
       }
     }
   },
+  "grafana-prometheus": {
+    "configuration": {
+      "prom-settings": {
+        "label-incremental-querying-beta": ""
+      }
+    }
+  },
   "grafana-ui": {
     "action-editor": {
       "button": {
